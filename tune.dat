@@ -1,0 +1,34 @@
+!+
+! AXES TUNING CONSTANTS BLOCK
+!-
+
+! Miscellaneous Parameters
+
+! Enable (T) or disable (F) optional processes
+DoBrdTelPos         T
+DoCollimate         T
+DoStatus            T
+! Maximum simultaneous number of users of TCC software
+MaxUsers            25
+! Interval between collimation updates (sec); 0 => no updates
+CollimateInterval   15
+! Interval between status updates: tracking, slewing, neither (sec)
+!  0 => no updates
+StatusInterval      10,  2, 60
+
+! Tracking and Slewing Parameters
+
+! Maximum time for axis MOVE P V T command (sec)
+AxisCmdTime         0.5
+
+! Interval between tracking updates (sec)
+TrackInterval       5.0
+! How far in advance to send tracking updates to the axis controller (sec)
+TrackAdvTime        1.0
+
+! Slew convergence criterion (sec); successive slews must have durations that match to within this time interval
+SlewConvTime        0.15
+! Max iterations of the slew computation
+slewMaxIter         30
+! Time for axis controllers to stabilize after a slew (sec)
+SlewFudge           1.0

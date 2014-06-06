@@ -1,0 +1,25 @@
+!+
+! The Echelle guider (note, some values are from SPIcam block)
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr       212.2,     215.9		! JMD 2013-10-18
+IIm_Scale  -27184.9, 26910.9		! JMD 2012-02-08
+                                        !
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY     512,     512
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc  -1250                          ! 2010-10-09 RM
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy  0.0,  0.00         	! 2009-07-13 RM
+                                        ! 
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang   	0.23     		! JMD 2012-02-08
+                                        !         
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -360.0, 360.0

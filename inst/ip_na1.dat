@@ -1,0 +1,78 @@
+!+
+! Instrument-Position Data
+!-
+
+! Tertiary Mirror Control
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+
+TertPistCoef     -580.0  0.0  0.0
+TertXTiltCoef    675.0 -50.0  50.0
+TertYTiltCoef   1300.0 220.0 -50.0
+TertXTransCoef      0.0  0.0  0.0
+TertYTransCoef   -580.0  0.0  0.0
+
+! Constants last modified 2014-05-08 RM
+! Sag coefficients REMOVED 2008-08-23 RM, reinstated 2012-08-08
+! New sag coefficients 2012-08-09 RM
+
+! Instrument Rotator
+
+! ID: controller number (0 if no controller, <0 invalid)
+RotID             0
+! physical angle used for pointing error measurements,
+! and the fixed physical angle if there is no rotator
+Rot_Fixed_Phys    0.0
+
+! Guide Camera Image
+! Photometrics Sensys camera; 1536x1024, probably with 9 um pixels
+
+! ID: controller number (0 if no controller, <0 invalid)
+GCamID            2
+! view number
+GCViewNum         0
+! maximum counts per pixel
+GIm_MaxCount   65535  ! 16 bits/pixel
+! default center of guide image (unbinned pix)
+! (for GCAM commands; used when user does not specify center)
+GIm_Ctr        283.0	233.0	! CL 2005-06-14
+! guide image scale (unbinned pix/deg on sky)
+GIm_Scale   -27068.1   26856.6	! RM 2005-04-04
+! min and max guide image coordinates (unbinned image units)
+GIm_MinXY        0         0
+GIm_MaxXY      512       512
+
+! binning factor (integer x, y)
+Gim_BinFac       1         1
+
+! Guide Probe(s)
+! probe number (in range [1,20]), does probe exist? (T=yes/F=no)
+! if and only if the probe exists then this data must follow in order:
+! center of guide probe on guide image (x,y unbinned pix)
+! mininum guide image coordinates (x,y unbinned pix)
+! maximum guide image coordinates (x,y unbinned pix)
+! position of guide camera probe w.r.t. rotator (x,y deg on sky)
+! angle from the guide image x axis to rotator x axis (deg)
+GProbe    1    T	! probe number, exists?
+  287.0      233.0	! center (x,y unbinned pix)
+    0          0	! mininum (x,y unbinned pix)
+  512        512	! maximum (x,y unbinned pix)
+ 0.0 0.0                ! pos. w.r.t. rotator (x,y deg on sky); RM KG 5-6-99
+  179.73    		! angle of rot w.r.t. image (deg); CPL 2005-04-05
+! number of probe used for pointing error measurements
+PtErrProbe   1
+
+! probe position w.r.t. rotator derived from:
+! pos. of the guide camera in the guide image frame (deg on sky)
+! GC_GIm_xy 0.0, 0.0	! RM KG 5-6-99
+! angle from the guide image x axis to the guide camera x axis
+! GC_GIm_ang -2.06	! KG 12-14-98
+
+! Guide Camera Mechanical
+! (focus and filters)
+
+! ID: controller number (0 if no controller, <0 invalid)
+GMechID          0

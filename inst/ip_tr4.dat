@@ -1,0 +1,74 @@
+! Tertiary Mirror Control
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+TertPistCoef     -100.0  0.0  0.0
+TertXTiltCoef     600.0  0.0  0.0
+TertYTiltCoef     800.0  0.0  0.0
+TertXTransCoef      0.0  0.0  0.0
+TertYTransCoef   -100.0  0.0  0.0
+! Above values set 2014-05-15 AB
+
+!+
+! Instrument-Position Data
+!-
+! No rotator, guide camera or guider mechanical controller.
+
+! Instrument Rotator
+
+! ID: controller number (0 if no controller, <0 invalid)
+RotID             0
+! physical angle used for pointing error measurements,
+! and the fixed physical angle if there is no rotator
+Rot_Fixed_Phys    0.0
+
+! Guide Camera Image
+
+! The section below lies and tells TCC that Shack has
+! a guide camera located exactly 
+! on the boresight.  This makes it possible to run 
+! track/pterr 
+
+! ID: controller number (0 if no controller, <0 invalid)
+GCamID            1
+! view number
+GCViewNum         0
+! maximum counts per pixel
+GIm_MaxCount  65535  ! 16 bits/pixel
+! default center of guide image (unbinned pix)
+! (for GCAM commands; used when user does not specify center)
+GIm_Ctr         512.0     512.0
+! guide image scale (unbinned pix/deg on sky)
+GIm_Scale    -27784.4   27569.0	! 2009-09-03 RM
+! minimum and maximum position on guide image (unbinned pix)
+GIm_MinXY         0         0
+GIm_MaxXY      1024      1024
+
+! binning factor (integer x, y)  testing 3x3 binning 8/10 cc
+Gim_BinFac        1         1
+
+! Guide Probe(s)
+! probe number (in range [1,20]), does probe exist? (T=yes/F=no)
+! if and only if the probe exists then this data must follow in order:
+! center of guide probe on guide image (x,y unbinned pix)
+! mininum guide image coordinates (x,y unbinned pix)
+! maximum guide image coordinates (x,y unbinned pix)
+! position of guide camera probe w.r.t. rotator (x,y deg on sky)
+! angle from the guide image x axis to rotator x axis (deg)
+GProbe   1     T	! probe number, exists?
+  512.0      512.0	! center (x,y unbinned pix)
+    0          0	! mininum (x,y unbinned pix)
+ 1024       1024	! maximum (x,y unbinned pix)
+  0.0  0.0              ! pos w.r.t. rotator (x,y deg on sky) 2013-02-28 RM
+     0.0   		! angle of rot w.r.t. image (deg)  2013-02-28 RM
+! number of probe used for pointing error measurements
+PtErrProbe   1
+
+! Guide Camera Mechanical
+! (focus and filters)
+
+! ID: controller number (0 if no controller, <0 invalid)
+GMechID          0
+

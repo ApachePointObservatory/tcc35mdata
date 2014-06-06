@@ -1,0 +1,94 @@
+!
+!+
+! Instrument-Position Data
+!-
+
+! Instrument Rotator
+
+! ID: controller number (0 if no controller, <0 invalid)
+RotID             1
+! physical angle used for pointing error measurements,
+! and the fixed physical angle if there is no rotator
+Rot_Fixed_Phys    0.0
+
+! rotator mount offset (mount units) and scale (mount units/deg)
+! mount angle = offet + (scale * physical angle)
+Rot_Offset       0.0
+Rot_Scale       -1.0
+
+! rotator limits due to the rotator:
+! note: the actual rotator angle limits are the intersection
+! of the RotLim angle limits with InstPosLim
+!       min ang   max ang   max |vel|   max |accel|   max |jerk|
+!        (deg)     (deg)    (deg/sec)   (deg/sec^2)  (deg/sec^3)
+RotLim   -360.0     360.0      3.5        0.7           7.0
+!  raised max vel was 3 acc was .2 (improved drive assy mak 8-1-03)
+! lowered accel (0.5 -> 0.2) , raised vel (2.75 -> 3.0) 2002-05-10 MK/CL
+! new vel, accel and jerk limits 2000-11-13 MAK  (WERE 3,.5,.4)
+! new vel, accel and jerk limits 1998-09-02 CPL (were 4, 1 and 5)
+! added decimal points to position limits 9/20/98 KG
+! raised jerk limit 2006-04-13 RO
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+!
+! 2007-09-11 NM&LC, measured in the dome at 90deg.
+! Sag coefficients zeroed 2008-09-15 RM
+! Tilt coefficients changed 2014-03-21 JMD
+! Piston coefficients changed 2009-07-12 GS
+
+TertPistCoef    -2000.0   0.0  0.0
+TertXTiltCoef      40.0   0.0  0.0
+TertYTiltCoef     975.0   0.0  0.0
+TertXTransCoef      0.0   0.0  0.0
+TertYTransCoef  -2000.0   0.0  0.0
+
+! Guide Camera Image
+! Photometrics PXL 1024 camera; 1024x1024 with ? mm pixels
+
+! ID: controller number (0 if no controller, <0 invalid)
+GCamID            1
+! view number
+GCViewNum         0
+! maximum counts per pixel
+GIm_MaxCount  65535  ! 16 bits/pixel
+! default center of guide image (unbinned pix)
+! (for GCAM commands; used when user does not specify center)
+GIm_Ctr         512.0     512.0
+! guide image scale (unbinned pix/deg on sky)
+GIm_Scale    26629.4   25808.4	! 2011-07-21 RM
+! minimum and maximum position on guide image (unbinned pix)
+GIm_MinXY         0         0
+GIm_MaxXY      1024      1024
+
+! binning factor (integer x, y)  testing 3x3 binning 8/10 cc
+Gim_BinFac        3         3
+
+! Guide Probe(s)
+! probe number (in range [1,20]), does probe exist? (T=yes/F=no)
+! if and only if the probe exists then this data must follow in order:
+! center of guide probe on guide image (x,y unbinned pix)
+! mininum guide image coordinates (x,y unbinned pix)
+! maximum guide image coordinates (x,y unbinned pix)
+! position of guide camera probe w.r.t. rotator (x,y deg on sky)
+! angle from the guide image x axis to rotator x axis (deg)
+GProbe   1     T	! probe number, exists?
+  512.0      512.0	! center (x,y unbinned pix)
+    0          0	! mininum (x,y unbinned pix)
+ 1024       1024	! maximum (x,y unbinned pix)
+   -0.224265 0.002239   ! pos w.r.t. rotator (x,y deg on sky); 2011-07-21 RM
+     -0.12   		! angle of rot w.r.t. image (deg); 2011-07-21 RM
+! number of probe used for pointing error measurements
+PtErrProbe   1
+
+! pos. w.r.t. rotator derived from:
+! pos. of the guide camera in the guide image frame (deg on sky)
+! pos. of the guide camera in the guide image frame (deg on sky)
+! GC_GIm_xy -0.224766, -0.004564	! 30-Sep-97 KG
+! angle from the guide image x axis to the guide camera x axis
+! GC_GIm_ang 180.97	! 30-Sep-97 KG
+
+! Guide Camera Mechanical
+! Moved to gmech in the hub, 25-Jan-2008 FRS

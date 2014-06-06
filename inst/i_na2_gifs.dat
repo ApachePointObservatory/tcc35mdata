@@ -1,0 +1,28 @@
+!+
+! The Goddard Fabry-Perot and Integral Field Spectrograph
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+! center for imaging mode is sweet spot for IFS mode
+IIm_Ctr      550.9,  414.9		! RM 2013-02-17
+IIm_Scale  -22428.7 21977.3		! JMD 2011-11-29
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1024,    1024		
+					
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc  -50                           ! RM 2006-10-18
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy  0.001545, 0.001574       	! JMD 2011-11-29  
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  89.81			! JMD 2011-11-29
+
+! guide camera focus (piston) (um)
+GCNomFocus  33000       		! RM 2005-09-30 
+
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0, 270.0

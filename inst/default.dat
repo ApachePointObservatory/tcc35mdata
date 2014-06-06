@@ -1,0 +1,37 @@
+!+
+! Telescope-Specific Data
+!-
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+! piston Coef2 = -410 um is based on:
+!   secondary apparatus supported by eight 89" long 1/2" diameter steel rods
+!   rods are separated 39" at secondary, 2" at other end
+!   secondary apparatus weighs roughly 370 lbs
+!   modulus of elasticity of steel = 30E6 psi
+
+!SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
+
+SecPistCoef      0.0  -150.0   -30.0    ! WFK 2010-10-25
+SecXTiltCoef   -65.0    0.0      0.0    ! RM 2015-05-15
+SecYTiltCoef   332.0    0.0      0.0    ! RM 2015-05-15
+SecXTransCoef -200.0    0.0      0.0    ! WFK 2013-08-01
+SecYTransCoef 1100.0  180.0    380.0    ! RM 2014-04-18              
+! SecYTrans set to be 0 at alt 85 where autocollimator was used 
+
+! secondary piston (focus) temperature coefficients (in um/C)
+! offset = coef1 * secondary truss temp
+!          + coef2 * primary front temp   + coef3 * primary back-front delta-t
+!          + coef4 * secondary front temp + coef5 * secondary back-front delta-t
+! Coef1 = 54.9 um/C is based on:
+!   primary to secondary distance = 6.17 m
+!   CTE = 11.7 um/m-C (steel) - 2.8 um/m-C (E-6 glass)
+!                  Truss   Prim F  Prim B-F   Sec F   Sec B-F
+SecPistTempCoef     51.0     0.0      0.0      0.0      0.0  ! RM 2011-05-26
+!SecPistTempCoef    43.0     0.0      0.0      0.0      0.0  ! before September 2006
+
+! maximum scale factor; set <= 1 to disable scale adjustment
+! note: minimum scale factor = 1/MaxScaleFac
+MaxScaleFac       1.0
