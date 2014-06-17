@@ -4,6 +4,7 @@
 !
 ! 2006-04-13 ROwen raised jerk limits
 ! 2009-09-04 FRS changed altitude a, j terms for new drives
+! 2014-06-17 ROwen lowered azimuth vel, accel and jerk limits at Mark Klaene's request.
 !-
 
 
@@ -11,15 +12,15 @@
 !   axes are: tel az/eq, tel alt/dec, rot, gcam r/x, gcam theta/y
 
 ! Minimum Position (deg)
-MinPos   -180       6       -180
+MinPos   -180.0      6.0    -180
 ! Maximum Position (deg) 
-MaxPos    360      87.2       180
+MaxPos    360.0     87.2     180
 ! Maximum |velocity| (deg*/sec)
-Vel       1.25    1.6    0
+Vel         1.25     1.50      0
 ! Mmaximum |acceleration| (deg*/sec^2)
-Accel       0.15     0.10   0
+Accel       0.10     0.10      0
 ! Maximum |jerk| (deg*/sec^3) (ignored for uncomputed offsets).
-Jerk        .75            .50     0
+Jerk        0.50     0.50      0
 
 !   Status Related Parameters
 
