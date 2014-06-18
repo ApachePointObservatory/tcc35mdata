@@ -14,12 +14,11 @@
 
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
-SecPistCoef  -0.1  -150.0  -30.0
-SecXTiltCoef  -66.5  -0.0  -0.0
-SecYTiltCoef  339.5  0.0  0.0
-SecXTransCoef  -231.6  0.0  0.0
-SecYTransCoef  1093.8  180.0  380.0
-! Sec coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-18.
+SecPistCoef      0.0  -150.0   -30.0    ! WFK 2010-10-25
+SecXTiltCoef   -65.0    0.0      0.0    ! RM 2015-05-15
+SecYTiltCoef   332.0    0.0      0.0    ! RM 2015-05-15
+SecXTransCoef -200.0    0.0      0.0    ! WFK 2013-08-01
+SecYTransCoef 1100.0  180.0    380.0    ! RM 2014-04-18              
 ! SecYTrans set to be 0 at alt 85 where autocollimator was used 
 
 ! secondary piston (focus) temperature coefficients (in um/C)

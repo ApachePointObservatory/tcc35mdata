@@ -1,0 +1,153 @@
+!+
+!      Instrument Data
+!-
+! Instrument
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr             0.0     0.0
+IIm_Scale           0.0     0.0
+! minimum and maximum instrument image coordinates (x,y unbinned pix)
+IIm_MinXY           0.0     0.0
+IIm_MaxXY           0.0     0.0
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc            0.0
+! position of the center of the rotator in instrument frame (x,y deg)
+Rot_Inst_xy         0.0     0.0
+! angle from the instrument x axis to the rotator x axis (deg)
+Rot_Inst_ang        0.0
+
+! minimum and maximum rotator angle due to the instrument (deg)
+! note: the actual rotator limits are the intersection of this
+! with the RotLim angle limits
+InstPosLim        -45.0    45.0
+
+!+
+!      Instrument-Position Data
+!-
+
+! Instrument Rotator
+
+! ID: controller number (0 if no controller, <0 invalid)
+RotID               0
+! physical angle used for pointing error measurements,
+! and the fixed physical angle if there is no rotator
+Rot_Fixed_Phys      0.0
+
+! rotator mount offset (mount units) and scale (mount units/deg)
+! mount angle = offet + (scale * physical angle)
+Rot_Offset          0.0
+Rot_Scale           0.0
+
+! rotator limits due to the rotator:
+! note: the actual rotator angle limits are the intersection
+! of the RotLim angle limits with InstPosLim
+! min ang   max ang   max |vel|   max |accel|   max |jerk|
+!  (deg)     (deg)    (deg/sec)   (deg/sec^2)  (deg/sec^3)
+RotLim   0.0     0.0     0.0     0.0     0.0
+
+! Guide Camera Image
+
+! ID: controller number (0 if no controller, <0 invalid)
+GCamID              0
+! view number
+GCViewNum           0
+! maximum counts per pixel
+GIm_MaxCount        0.0
+! default center of guide image (unbinned pix)
+! (for GCAM commands; used when user does not specify center)
+GIm_Ctr             0.0     0.0
+! guide image scale (unbinned pix/deg on sky)
+GIm_Scale           0.0     0.0
+! minimum and maximum position on guide image (unbinned pix)
+GIm_MinXY           0.0     0.0
+GIm_MaxXY           0.0     0.0
+
+! binning factor (integer x,y)
+GIm_BinFac          0       0
+
+! Guide Probe(s)
+! probe number (in range [1,20]), does probe exist? (T=yes/F=no)
+! if and only if the probe exists then this data must follow in order:
+! center of guide probe on guide image (x,y unbinned pix)
+! mininum guide image coordinates (x,y unbinned pix)
+! maximum guide image coordinates (x,y unbinned pix)
+! position of guide camera probe w.r.t. rotator (x,y deg on sky)
+! angle from the guide image x axis to rotator x axis (deg)
+GProbe    1        T	! probe number, exists?
+        512      512	! center (x,y unbinned pix)
+          0        0	! mininum (x,y unbinned pix)
+       1023     1023	! maximum (x,y unbinned pix)
+          0        0	! pos. w.r.t. rotator (x,y deg on sky)
+          0		! angle of rot w.r.t. image (deg)
+! number of probe used for pointing error measurements
+PtErrProbe          1
+ ! the minimum # of guide stars needed before rotation
+ ! or scale will be corrected; values <2 are treated as 2
+ MinStarsForRot     0
+
+! Guide Camera Mechanical
+! (focus and filters)
+
+! ID: controller number (0 if no controller, <0 invalid)
+GMechID             0
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus          0.0
+! mininum and maximum guide camera focus (piston) (um)
+GCFocLim            0.0     0.0
+! index to currently selected guide camera filter
+! must be in range [1,GCNFilt] if gcNFilt > 0, else ignored
+! warning: index is the position in the list of filters, it is not the filter number
+GCCurrFiltInd       0
+! number of guide camera filters available
+! must be in range [0,12]; 0 if no filter, 1 if one fixed filter
+GCNFilt             1
+! data for each guide camera filter:
+! number, name, central wavelength (A), FWHM (A),
+! factional transmission at central wavelength, focus correction (um)
+5  "example"        0.0     0.0     0.0     0.0
+
+!+
+! Telescope-Specific Data (stored in tinst:Default.dat)
+!-
+
+! Mirror Control
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+PrimPistCoef        0.0     0.0     0.0
+PrimXTiltCoef       0.0     0.0     0.0
+PrimYTiltCoef       0.0     0.0     0.0
+PrimXTransCoef      0.0     0.0     0.0
+PrimYTransCoef      0.0     0.0     0.0
+
+SecPistCoef         0.0     0.0     0.0
+SecXTiltCoef        0.0     0.0     0.0
+SecYTiltCoef        0.0     0.0     0.0
+SecXTransCoef       0.0     0.0     0.0
+SecYTransCoef       0.0     0.0     0.0
+
+TertPistCoef        0.0     0.0     0.0
+TertXTiltCoef       0.0     0.0     0.0
+TertYTiltCoef       0.0     0.0     0.0
+TertXTransCoef      0.0     0.0     0.0
+TertYTransCoef      0.0     0.0     0.0
+
+! secondary piston (focus) temperature coefficients (in um/C)
+! offset = coef1 * secondary truss temp
+!          + coef2 * primary front temp   + coef3 * primary back-front delta-t
+!          + coef4 * secondary front temp + coef5 * secondary back-front delta-t
+SecPistTempCoef     0.0     0.0     0.0     0.0     0.0
+
+! primary and secondary scale coefficients (um)
+! delta piston = pistScaleCoef * (ScaleFac - 1)
+PrimPistScaleCoef   0.0
+SecPistScaleCoef    0.0
+
+! maximum scale factor; set <= 1 to disable scale adjustment
+! note: minimum scale factor = 1/MaxScaleFac
+MaxScaleFac         1.0

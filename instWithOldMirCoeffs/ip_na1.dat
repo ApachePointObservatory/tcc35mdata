@@ -9,12 +9,11 @@
 ! - tilt coefficients are in arc-seconds
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
 
-TertPistCoef  -618.1  -0.8  -0.2
-TertXTiltCoef  744.5  -53.2  54.3
-TertYTiltCoef  758.0  124.4  -28.5
-TertXTransCoef  1.2  -0.0  0.0
-TertYTransCoef  -521.9  7.5  -2.0
-! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-18.
+TertPistCoef     -580.0  0.0  0.0
+TertXTiltCoef    675.0 -50.0  50.0
+TertYTiltCoef   1300.0 220.0 -50.0
+TertXTransCoef      0.0  0.0  0.0
+TertYTransCoef   -580.0  0.0  0.0
 
 ! Constants last modified 2014-05-08 RM
 ! Sag coefficients REMOVED 2008-08-23 RM, reinstated 2012-08-08

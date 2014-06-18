@@ -1,0 +1,26 @@
+!+
+! The guider for Near-Infrared Spectrograph, TripleSpec
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr      460       830		! RM 2013-09-30
+IIm_Scale   -13404.4, 14473.0   	! JMD 2011-07-23 
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1024,     1024
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc      0                         ! WFK 2008-03-19
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy   -0.007615, 0.003115       ! JMD 2011-07-23
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  -41.38 			! JMD 2011-07-23
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus  43000	        	! RM 2005-09-19
+
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0,270.0

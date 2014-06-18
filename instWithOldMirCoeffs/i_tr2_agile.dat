@@ -1,0 +1,25 @@
+!+
+! The Agile Instrument at TR2
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr       512,     512		! WFK 2009-06-05
+IIm_Scale   27778.6, 27636.5		! 2013-06-26 RM
+                                        !
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1024,    1024
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc    -2250                         ! 2012-11-28 RM
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy   0.000704, 0.001101          ! 2013-06-26 RM
+                                         ! 
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang   -89.64         	         ! 2013-06-26 RM
+                                         !         
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -180.0, 180.0

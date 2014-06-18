@@ -1,0 +1,26 @@
+!+
+! The Near-Infrared Imager and Fabry Perot Spectrogrph
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr      512       512		! RM 2004-09-29
+IIm_Scale   13213.6, 13230.8		! RM 2011-07-28 
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1024,     1024
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc   300                          ! RM 2006-10-18
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy -0.000075, 0.001409         ! RM 2011-07-28
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  90.05 			! RM 2011-07-28
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus  43000	        	! RM 2005-09-19
+
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0, 270.0
