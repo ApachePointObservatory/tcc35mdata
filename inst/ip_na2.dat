@@ -44,7 +44,7 @@ TertXTiltCoef  46.3  0.0  0.0
 TertYTiltCoef  629.7  0.0  0.0
 TertXTransCoef  14.2  0.0  0.0
 TertYTransCoef  -1905.8  0.0  0.0
-! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-18.
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-27.
 
 ! Guide Camera Image
 ! Photometrics PXL 1024 camera; 1024x1024 with ? mm pixels

@@ -14,7 +14,7 @@ TertXTiltCoef  744.5  -53.2  54.3
 TertYTiltCoef  758.0  124.4  -28.5
 TertXTransCoef  1.2  -0.0  0.0
 TertYTransCoef  -521.9  7.5  -2.0
-! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-18.
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-27.
 
 ! Constants last modified 2014-05-08 RM
 ! Sag coefficients REMOVED 2008-08-23 RM, reinstated 2012-08-08

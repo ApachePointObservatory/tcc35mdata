@@ -125,17 +125,19 @@ PrimYTiltCoef       0.0     0.0     0.0
 PrimXTransCoef      0.0     0.0     0.0
 PrimYTransCoef      0.0     0.0     0.0
 
-SecPistCoef         0.0     0.0     0.0
-SecXTiltCoef        0.0     0.0     0.0
-SecYTiltCoef        0.0     0.0     0.0
-SecXTransCoef       0.0     0.0     0.0
-SecYTransCoef       0.0     0.0     0.0
+SecPistCoef  0.0  0.0  0.0
+SecXTiltCoef  0.0  0.0  0.0
+SecYTiltCoef  0.0  0.0  0.0
+SecXTransCoef  0.0  0.0  0.0
+SecYTransCoef  0.0  0.0  0.0
+! Sec coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-27.
 
-TertPistCoef        0.0     0.0     0.0
-TertXTiltCoef       0.0     0.0     0.0
-TertYTiltCoef       0.0     0.0     0.0
-TertXTransCoef      0.0     0.0     0.0
-TertYTransCoef      0.0     0.0     0.0
+TertPistCoef  0.0  0.0  0.0
+TertXTiltCoef  0.0  0.0  0.0
+TertYTiltCoef  0.0  0.0  0.0
+TertXTransCoef  0.0  0.0  0.0
+TertYTransCoef  0.0  0.0  0.0
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-27.
 
 ! secondary piston (focus) temperature coefficients (in um/C)
 ! offset = coef1 * secondary truss temp
