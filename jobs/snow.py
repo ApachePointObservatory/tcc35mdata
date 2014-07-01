@@ -16,4 +16,4 @@ def run(sr):
             yield sr.waitSec(WarnSec)
 
 def end(sr):
-    sr.startCmd("axis init")
+    sr.startCmd("axis stop")
