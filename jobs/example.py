@@ -1,8 +1,7 @@
 """Example batch job
 """
 
-MSPerSec = 1000
-WaitSec = 2
+WaitSec = 1
 
 def run(sr):
     """Simple test batch job
@@ -10,7 +9,7 @@ def run(sr):
     yield sr.waitCmd('broadcast "example batch job showing time"')
     yield sr.waitCmd("show time")
     yield sr.waitCmd('broadcast "example batch job waiting %s seconds"' % (WaitSec,))
-    yield sr.waitMS(WaitSec * MSPerSec)
+    yield sr.waitSec(WaitSec)
     yield sr.waitCmd('broadcast "example batch job showing focus"')
     yield sr.waitCmd("show focus")
 
