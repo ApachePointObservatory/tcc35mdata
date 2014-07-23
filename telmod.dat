@@ -1,9 +1,9 @@
-SYS$SYSDEVICE:[TCC.PTERR]PTERR_20140515.DAT;2
-T  125   5.9340
-  IE       -181.8733
-  IA       +175.6162
-  AN         -0.1523
-  AW         +6.2522
-  CA        -52.1404
-  PZZ1      -35.7941
+SYS$SYSDEVICE:[TCC.PTERR]PTERR_20140722.DAT;2
+T  127   6.0692
+  IE       -201.0132
+  IA       +199.1527
+  AN         -8.0473
+  AW         +8.8617
+  CA        -72.8518
+  PZZ1      -35.2606
 END
