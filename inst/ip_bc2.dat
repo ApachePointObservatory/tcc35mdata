@@ -4,12 +4,12 @@
 ! - piston and translation coefficients are in um
 ! - tilt coefficients are in arc-seconds
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
-TertPistCoef  -839.0  0.0  0.0
-TertXTiltCoef  219.8  0.0  0.0
-TertYTiltCoef  315.3  0.0  0.0
-TertXTransCoef  2.3  0.0  0.0
-TertYTransCoef  -758.2  0.0  0.0
-! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-06-27.
+TertPistCoef  -847.1  0.0  0.0
+TertXTiltCoef  208.9  0.0  0.0
+TertYTiltCoef  284.7  0.0  0.0
+TertXTransCoef  1.7  0.0  0.0
+TertYTransCoef  -750.1  0.0  0.0
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
 ! Above meaningless values set 2009-07-13 RM
 
 !+

@@ -15,11 +15,11 @@
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
 SecPistCoef      0.0  -150.0   -30.0    ! WFK 2010-10-25
-SecXTiltCoef   -65.0    0.0      0.0    ! RM 2015-05-15
-SecYTiltCoef   332.0    0.0      0.0    ! RM 2015-05-15
-SecXTransCoef -200.0    0.0      0.0    ! WFK 2013-08-01
-SecYTransCoef 1100.0  180.0    380.0    ! RM 2014-04-18              
-! SecYTrans set to be 0 at alt 85 where autocollimator was used 
+SecXTiltCoef  -375.0    0.0      0.0    ! RM 2014-07-22
+SecYTiltCoef   190.0    0.0      0.0    ! RM 2014-07-22
+SecXTransCoef -180.0    0.0      0.0    ! RM 2014-07-19
+SecYTransCoef -469.0  180.0    380.0    ! RM 2014-07-19
+! SecYTrans set to be 0 at alt 85 where autocollimator was used
 
 ! secondary piston (focus) temperature coefficients (in um/C)
 ! offset = coef1 * secondary truss temp
