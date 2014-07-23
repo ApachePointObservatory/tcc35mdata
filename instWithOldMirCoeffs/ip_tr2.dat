@@ -9,11 +9,11 @@
 ! - tilt coefficients are in arc-seconds
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
 TertPistCoef    -2000.0 0.0  0.0
-TertXTiltCoef     180.0  0.0  0.0
+TertXTiltCoef     280.0  0.0  0.0
 TertYTiltCoef    1250.0  0.0  0.0
 TertXTransCoef      0.0  0.0  0.0
 TertYTransCoef  -2000.0  0.0  0.0
-! Above values set 2013-08-05 RM 
+! Above values set 2014-07-23 JMD
 ! Modifed 2009-06-12 WFK
 
 !+
@@ -42,9 +42,9 @@ RotLim   -270.0     270.0      3.5        0.7           7.0
 ! Guide Camera Image
 
 ! The section below lies and tells TCC that Agile has
-! a guide camera located exactly 
-! on the boresight.  This makes it possible to run 
-! track/pterr 
+! a guide camera located exactly
+! on the boresight.  This makes it possible to run
+! track/pterr
 
 ! ID: controller number (0 if no controller, <0 invalid)
 GCamID            1
