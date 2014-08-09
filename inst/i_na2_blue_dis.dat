@@ -1,27 +1,27 @@
 ! DIS slit viewer
 ! 
 !-
-!
+
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr     240.0,     221.2	! center of CCD (sweet spot)  2014-07-23 JMD
-IIm_Scale  -12055.8, 12049.0	! 2011-07-25 JMD    
+IIm_Ctr     1315,     512	! center of CCD
+IIm_Scale   8614.4,   8556.3	! 2014-07-24 JMD    
 ! min and max instrument image coordinates (unbinned image units)
 IIm_MinXY     0,    0
-IIm_MaxXY   524,  511
-!
+IIm_MaxXY   2048,  1024
+
 ! focus (secondary piston) offset due to instrument (um)
-Inst_Foc  -200                           ! 2011-05-26 RM
+Inst_Foc  -200                          ! 2006-10-18 RM
 ! nominal focus setting (piston) for this camera (um)
 ! net focus = nominal focus + user focus + filter-specific focus correction
-GCNomFocus     22000			! 2007-03-15 RM
+GCNomFocus     22000			! RM 2007-03-15
 ! position of the center of the rotator in instrument frame
-Rot_Inst_xy   -0.008635, -0.001395	! 2011-07-25 JMD
+Rot_Inst_xy   -0.004515, 0.002175	! 2014-07-24 JMD
 ! angle from the instrument x axis to the rotator x axis
-Rot_Inst_ang   179.80 			! 2011-07-25 JMD 
-!
+Rot_Inst_ang   -90.78 			! 2014-07-24 JMD
+
 ! min, max rotator position due to the instrument (deg)
 ! note: the net position limits are the intersection of this
 ! with the position components of RotLim
 InstPosLim  -270.0, 270.0
-!
+
