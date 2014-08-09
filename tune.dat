@@ -18,15 +18,19 @@ StatusInterval      10,  2, 10
 
 ! Tracking and Slewing Parameters
 
-! Maximum time for axis MOVE P V T command (sec)
-AxisCmdTime         0.5
+! How far in advance to send the first PVT of a slew (sec)
+SlewAdvTime         0.5
+! Minimum slew duration after the first PVT is sent (sec);
+! provides time to send the remaining slew PVTs after the first
+SlewMinDuration     0.5
 
 ! Interval between tracking updates (sec)
 TrackInterval       5.0
 ! How far in advance to send tracking updates to the axis controller (sec)
 TrackAdvTime        1.0
 
-! Slew convergence criterion (sec); successive slews must have durations that match to within this time interval
+! Slew convergence criterion (sec);
+! successive slews must have durations that match to within this time interval
 SlewConvTime        0.15
 ! Max iterations of the slew computation
 slewMaxIter         30
