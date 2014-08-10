@@ -19,7 +19,7 @@ StatusInterval      10,  2, 10
 ! Tracking and Slewing Parameters
 
 ! How far in advance to send the first PVT of a slew (sec)
-SlewAdvTime         0.5
+SlewAdvTime         1.0
 ! Minimum slew duration after the first PVT is sent (sec);
 ! provides time to send the remaining slew PVTs after the first
 SlewMinDuration     0.5
