@@ -11,7 +11,7 @@ DoStatus            T
 ! Maximum simultaneous number of users of TCC software
 MaxUsers            25
 ! Interval between collimation updates (sec); 0 => no updates
-CollimateInterval   15
+CollimateInterval   30
 ! Interval between status updates: tracking, slewing, neither (sec)
 !  0 => no updates
 StatusInterval      10,  2, 10
