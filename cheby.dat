@@ -1,0 +1,32 @@
+! name of object
+Name "test chebyshev"
+
+! Coordinate system code and date
+! Optional: defaults to appgeo 0
+! Choices (which are case-sensitive) include:
+! appgeo: apparent geocentric; date is date of equinox (Julian years); 0 means now
+! apptopo: apparent topocentric; date is TAI (MJD, sec); 0 means now
+! obs: refracted apparent topocentric; date is TAI (MJD, sec); 0 means now
+UserSys   obs 0
+
+! Chebyshev  coefficients for user position 1 (deg)
+ChebyUser1 4914549506   4914556706 323 0.03 0.01
+ChebyUser2 4914549506   4914556706 45 0.03 0.01
+ChebyDist  4914549506   4914556706 9.9e9
+
+! Type of rotation (e.g. with object or horizon); see Rotator angle for codes
+! Optional; defaults to none
+RotType object
+
+! Rotator angle as position velocity time (TAI, MDJ). 
+! Optional; defaults to nan nan nan
+! The exact meaning depends on RotType (which is case sensitive):
+! - object: the angle of the user coordinate system w.r.t. the instrument.
+! - horizon: the angle of az/alt w.r.t the instrument
+! - mount: the angle sent to the axis controller
+! - none: no rotation
+RotUser 0 0 1
+
+! Predicted magnitude of object
+! Optional: defaults to nan
+Mag        9
