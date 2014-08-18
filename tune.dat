@@ -35,4 +35,4 @@ SlewConvTime        0.15
 ! Max iterations of the slew computation
 slewMaxIter         30
 ! Time for axis controllers to stabilize after a slew (sec)
-SlewFudge           1.0
+SlewFudge           3.0
