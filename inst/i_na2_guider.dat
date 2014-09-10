@@ -23,4 +23,4 @@ GCNomFocus  37000	        	! RM 08/21/04
 ! min, max rotator position due to the instrument (deg)
 ! note: the net position limits are the intersection of this
 ! with the position components of RotLim
-InstPosLim  -360.0, 360.0
+InstPosLim  -270.0, 270.0
