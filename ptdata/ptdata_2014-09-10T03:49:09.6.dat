@@ -1,0 +1,25 @@
+! Caption record:
+APO 3.5M Pointing Data 2014-09-10T03:49:09.6
+! Option record: ALTAZ followed by rotator code, if applicable
+: ALTAZ
+: ROTL
+! Run parameters: telescope latitude deg min sec
+32 46 49.3
+! Pointing data (TPOINT format #4):
+!
+! All angles are in degrees
+! Azimuth uses the convention: N=0, E=90 (unlike the TCC, which uses S=0, E=90)
+!
+!  Desired Phys            Actual Mount          Rot Phys
+! Az          Alt         Az          Alt
+  87.708518   53.080670   87.726097   53.126180   -0.00000
+  54.017229   15.508193   54.052919   15.543279   -0.00000
+  22.899261   13.450557   22.934693   13.487874   -0.00000
+  -5.633000   12.856451   -5.597043   12.894402   -0.00000
+ -41.956080   14.656238  -41.920683   14.698193   -0.00000
+-105.709765   13.122393 -105.674942   13.166748   -0.00000
+ -76.622425   14.616421  -76.588908   14.659291   -0.00000
+ -40.483862   47.199410  -40.457967   47.245916   -0.00000
+   8.163530   70.279234    8.160085   70.329392   -0.00000
+  35.412151   44.501861   35.437820   44.546807   -0.00000
+-150.662091   77.473577  209.283854   77.530471   -0.00000
