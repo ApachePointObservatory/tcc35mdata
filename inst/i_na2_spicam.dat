@@ -5,7 +5,7 @@
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
 IIm_Ctr      1044,     1024		! RO 11-6-97
-IIm_Scale  -25904.06, 256024.3            ! AB 2014-10-08
+IIm_Scale  -25904.06, 25602.4           ! AB 2014-10-08
 ! min and max instrument image coordinates (unbinned pixels)
 IIm_MinXY       0,       0
 IIm_MaxXY    2087,    2047

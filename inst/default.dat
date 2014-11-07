@@ -15,8 +15,8 @@
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
 SecPistCoef  -0.4  -149.9  -29.8
-SecXTiltCoef  -400.0  0.0  0.0
-SecYTiltCoef  193.6  0.1  0.3
+SecXTiltCoef  -417.0  0.0  0.0
+SecYTiltCoef  179.0  0.1  0.3
 SecXTransCoef  -198.6  0.1  0.2
 SecYTransCoef  -504.6  180.0  380.0
 ! Sec coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
