@@ -60,7 +60,7 @@ GIm_MaxCount  65535  ! 16 bits/pixel
 ! (for GCAM commands; used when user does not specify center)
 GIm_Ctr         512.0     512.0
 ! guide image scale (unbinned pix/deg on sky)
-GIm_Scale    26629.4   25808.4	! 2011-07-21 RM
+GIm_Scale    26243.4   25864.0	! 2014-11-08 ABS
 ! minimum and maximum position on guide image (unbinned pix)
 GIm_MinXY         0         0
 GIm_MaxXY      1024      1024
@@ -80,17 +80,10 @@ GProbe   1     T	! probe number, exists?
   512.0      512.0	! center (x,y unbinned pix)
     0          0	! mininum (x,y unbinned pix)
  1024       1024	! maximum (x,y unbinned pix)
-   -0.224265 0.002239   ! pos w.r.t. rotator (x,y deg on sky); 2011-07-21 RM
-     -0.12   		! angle of rot w.r.t. image (deg); 2011-07-21 RM
+  0.221649 0.002282     ! pos w.r.t. rotator (x,y deg on sky); 2014-11-08 ABS
+     1.24   		! angle of rot w.r.t. image (deg); 2014-11-08 ABS
 ! number of probe used for pointing error measurements
 PtErrProbe   1
-
-! pos. w.r.t. rotator derived from:
-! pos. of the guide camera in the guide image frame (deg on sky)
-! pos. of the guide camera in the guide image frame (deg on sky)
-! GC_GIm_xy -0.224766, -0.004564	! 30-Sep-97 KG
-! angle from the guide image x axis to the guide camera x axis
-! GC_GIm_ang 180.97	! 30-Sep-97 KG
 
 ! Guide Camera Mechanical
 ! Moved to gmech in the hub, 25-Jan-2008 FRS
