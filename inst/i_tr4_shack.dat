@@ -15,5 +15,5 @@ Inst_Foc   350                         ! RM 2010-08-10
 ! position of the center of the rotator in instrument frame
 Rot_Inst_xy  0.0055, -0.00139           ! RM 2009-09-02
 ! angle from the instrument x axis to the rotator x axis
-Rot_Inst_ang  -18.0 			! RM 2009-09-02
+Rot_Inst_ang  35.0 			! RM 2015-01-04
 
