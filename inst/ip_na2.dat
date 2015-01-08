@@ -80,7 +80,7 @@ GProbe   1     T	! probe number, exists?
   512.0      512.0	! center (x,y unbinned pix)
     0          0	! mininum (x,y unbinned pix)
  1024       1024	! maximum (x,y unbinned pix)
-  0.221649 0.002282     ! pos w.r.t. rotator (x,y deg on sky); 2014-11-08 ABS
+  -0.221646, 0.002515  ! pos w.r.t. rotator (x,y deg on sky); 2014-11-08 ABS put in correct coord frame by RO 2015-01-07
      1.24   		! angle of rot w.r.t. image (deg); 2014-11-08 ABS
 ! number of probe used for pointing error measurements
 PtErrProbe   1
