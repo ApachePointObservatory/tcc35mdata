@@ -27,7 +27,7 @@ SlewMinDuration     0.5
 ! Interval between tracking updates (sec)
 TrackInterval       5.0
 ! How far in advance to send tracking updates to the axis controller (sec)
-TrackAdvTime        1.0
+TrackAdvTime        1.5
 
 ! Slew convergence criterion (sec);
 ! successive slews must have durations that match to within this time interval
