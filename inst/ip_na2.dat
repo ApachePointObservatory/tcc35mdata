@@ -60,7 +60,7 @@ GIm_MaxCount  65535  ! 16 bits/pixel
 ! (for GCAM commands; used when user does not specify center)
 GIm_Ctr         512.0     512.0
 ! guide image scale (unbinned pix/deg on sky)
-GIm_Scale    26243.4   25864.0	! 2014-11-08 ABS
+GIm_Scale    26399.7   25998.4	! 2015-04-03 JMD
 ! minimum and maximum position on guide image (unbinned pix)
 GIm_MinXY         0         0
 GIm_MaxXY      1024      1024
@@ -80,8 +80,8 @@ GProbe   1     T	! probe number, exists?
   512.0      512.0	! center (x,y unbinned pix)
     0          0	! mininum (x,y unbinned pix)
  1024       1024	! maximum (x,y unbinned pix)
-  -0.221646, 0.002515  ! pos w.r.t. rotator (x,y deg on sky); 2014-11-08 ABS put in correct coord frame by RO 2015-01-07
-     1.24   		! angle of rot w.r.t. image (deg); 2014-11-08 ABS
+  -0.221604, 0.001577  ! pos w.r.t. rotator (x,y deg on sky); 2015-04-03 JMD put in correct coord frame by RO 2015-01-07
+     0.98   		! angle of rot w.r.t. image (deg); 2015-04-03 JMD
 ! number of probe used for pointing error measurements
 PtErrProbe   1
 
