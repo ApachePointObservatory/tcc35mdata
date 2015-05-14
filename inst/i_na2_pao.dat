@@ -1,0 +1,27 @@
+!+
+! Portable Adaptive Optics imager from NIAOT
+!-
+! 
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr           320.0,   256.0      ! RM 2015-01-12
+IIm_Scale      -75000.0,  75000.0     ! RM 2015-01-16
+! minimum and maximum instrument image coordinates (x,y unbinned pix)
+IIm_MinXY           0.0,     0.0     ! RM 2015-01-12
+IIm_MaxXY          640.0   512.0     ! RM 2015-01-12
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc            0.0
+! position of the center of the rotator in instrument frame (x,y deg)
+Rot_Inst_xy       -0.0043,  -0.00076    ! RM 2015-01-18
+! angle from the instrument x axis to the rotator x axis (deg)
+Rot_Inst_ang       -45.0               !  RM 2015-01-16
+GCNomFocus         30000              !  RM 2015-01-12
+
+
+! minimum and maximum rotator angle due to the instrument (deg)
+! note: the actual rotator limits are the intersection of this
+! with the RotLim angle limits
+InstPosLim        -0.1,    0.1
+
