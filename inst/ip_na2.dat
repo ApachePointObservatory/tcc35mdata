@@ -60,7 +60,7 @@ GIm_MaxCount  65535  ! 16 bits/pixel
 ! (for GCAM commands; used when user does not specify center)
 GIm_Ctr         512.0     512.0
 ! guide image scale (unbinned pix/deg on sky)
-GIm_Scale    26399.7   25998.4	! 2015-04-03 JMD
+GIm_Scale    26399.7   25998.4  ! 2015-04-03 JMD
 ! minimum and maximum position on guide image (unbinned pix)
 GIm_MinXY         0         0
 GIm_MaxXY      1024      1024
@@ -69,19 +69,19 @@ GIm_MaxXY      1024      1024
 Gim_BinFac        3         3
 
 ! Guide Probe(s)
-! probe number (in range [1,20]), does probe exist? (T=yes/F=no)
+! probe number (starting from 1 and strictly sequential), does probe exist?
 ! if and only if the probe exists then this data must follow in order:
-! center of guide probe on guide image (x,y unbinned pix)
-! mininum guide image coordinates (x,y unbinned pix)
-! maximum guide image coordinates (x,y unbinned pix)
-! position of guide camera probe w.r.t. rotator (x,y deg on sky)
-! angle from the guide image x axis to rotator x axis (deg)
-GProbe   1     T	! probe number, exists?
-  512.0      512.0	! center (x,y unbinned pix)
-    0          0	! mininum (x,y unbinned pix)
- 1024       1024	! maximum (x,y unbinned pix)
-  -0.221604, 0.001577  ! pos w.r.t. rotator (x,y deg on sky); 2015-04-03 JMD put in correct coord frame by RO 2015-01-07
-     0.98   		! angle of rot w.r.t. image (deg); 2015-04-03 JMD
+! center of guide probe (guide image x,y unbinned pix)
+! lower left corner of the smallest box containing the probe (guide image x,y unbinned pix)
+! upper right corner of the smallest box containing the probe (guide image x,y unbinned pix)
+! position of rotator with respect to probe center (x,y deg on sky)
+! angle of rotator x axis with respect to guide image (deg)
+GProbe   1     T    ! probe number, exists?
+  512.0      512.0  ! center of probe (guide image x,y unbinned pix)
+    0          0    ! lower left corner of probe (guide image x,y unbinned pix)
+ 1024       1024    ! upper right corner of probe (guide image x,y unbinned pix)
+0.221599  0.002199  ! position of rotator with respect to probe center (x,y deg on sky); 2015-04-03 JMD; changed for tcc 1.2.0b4 RO 2015-06-03
+    0.98           ! angle of rotator with respect to guide image (deg); 2015-04-03 JMD
 ! number of probe used for pointing error measurements
 PtErrProbe   1
 

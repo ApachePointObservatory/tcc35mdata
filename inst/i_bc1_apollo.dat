@@ -2,10 +2,26 @@
 ! The APO Lunar Laser Observer (APOLLO)
 !-
 
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+TertPistCoef  100.0  0.0  0.0
+TertXTiltCoef  -416.5  0.0  0.0
+TertYTiltCoef  52.3  0.0  0.0
+TertXTransCoef  0.0  0.0  0.0
+TertYTransCoef  100.1  0.0  0.0
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
+! Above values set 07/17/05 MK WITH COLLIMATOR
+! Tilts changed 2009-02-11 RM for pointing?
+! Others changed 2007-08-23 RM following NA2 recollimation
+
+! Instrument Position
+
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr      1044,     1024		! RO 11-6-97
-IIm_Scale  -25589.8, 25619.5		! RM 12-16-99
+IIm_Ctr      1044,     1024     ! RO 11-6-97
+IIm_Scale  -25589.8, 25619.5        ! RM 12-16-99
 ! min and max instrument image coordinates (unbinned pixels)
 IIm_MinXY       0,       0
 IIm_MaxXY    2087,    2047
@@ -15,5 +31,19 @@ Inst_Foc   700                         ! RM 2014-10-09
 ! position of the center of the rotator in instrument frame
 Rot_Inst_xy  -0.043, -0.044            ! RM 2014-07-22
 ! angle from the instrument x axis to the rotator x axis
-Rot_Inst_ang  -0.0 			! RM 6/27/05
+Rot_Inst_ang  -0.0          ! RM 6/27/05
+
+! No rotator, guide camera or guider mechanical controller.
+
+! ID: controller number (0 if no controller, <0 invalid)
+RotID             0
+! physical angle used for pointing error measurements,
+! and the fixed physical angle if there is no rotator
+Rot_Fixed_Phys    0.0
+
+! ID: controller number (0 if no controller, <0 invalid)
+GCamID            0
+
+! ID: controller number (0 if no controller, <0 invalid)
+GMechID          0
 

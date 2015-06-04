@@ -1,39 +1,5 @@
-! Tertiary Mirror Control
-
-! mirror collimation coefficients
-! - piston and translation coefficients are in um
-! - tilt coefficients are in arc-seconds
-! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
-TertPistCoef  100.0  0.0  0.0
-TertXTiltCoef  -416.5  0.0  0.0
-TertYTiltCoef  52.3  0.0  0.0
-TertXTransCoef  0.0  0.0  0.0
-TertYTransCoef  100.1  0.0  0.0
-! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
-! Above values set 07/17/05 MK WITH COLLIMATOR
-! Tilts changed 2009-02-11 RM for pointing?
-! Others changed 2007-08-23 RM following NA2 recollimation
-
-!+
-! Instrument-Position Data
-!-
-! No rotator, guide camera or guider mechanical controller.
-
-! Instrument Rotator
-
-! ID: controller number (0 if no controller, <0 invalid)
-RotID             0
-! physical angle used for pointing error measurements,
-! and the fixed physical angle if there is no rotator
-Rot_Fixed_Phys    0.0
-
-! Guide Camera Image
-
-! ID: controller number (0 if no controller, <0 invalid)
-GCamID            0
-
-! Guide Camera Mechanical
-! (focus and filters)
-
-! ID: controller number (0 if no controller, <0 invalid)
-GMechID          0
+!
+! The APO Lunar Laser Observer (APOLLO) instrument port
+!
+! All data is in i_bc_apollo.dat
+!
