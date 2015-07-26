@@ -40,13 +40,14 @@ RotLim   -360.0     360.0      3.5        0.7           7.0
 ! Piston coefficients changed 2009-07-12 GS
 !
 
-TertPistCoef  -2094.3  0.0  0.0
-TertXTiltCoef  110.3  0.0  0.0
-TertYTiltCoef  512.2  0.0  0.0
-TertXTransCoef  10.3  0.0  0.0
+TertPistCoef  -2000.0  0.0  0.0
+TertXTiltCoef  160.0 0.0  0.0
+TertYTiltCoef   430.0  0.0  0.0
+TertXTransCoef   0.0  0.0  0.0
 TertYTransCoef  -1896.6  0.0  0.0
-! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
 
+! Pist, Xtilt, Ytilt adjusted 2015-07-26 according to autocollimator
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
 ! Guide Camera Image
 ! Photometrics PXL 1024 camera; 1024x1024 with ? mm pixels
 
