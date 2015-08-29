@@ -8,8 +8,8 @@
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
 
 TertPistCoef  -626.0  -6.2  1.0
-TertXTiltCoef  650.0  -51.2  51.7
-TertYTiltCoef  680.0  118.3  -27.1
+TertXTiltCoef  770.0  -51.2  51.7
+TertYTiltCoef  530.0  118.3  -27.1
 TertXTransCoef  0.9  -0.0  0.0
 TertYTransCoef  -527.3  9.9  -2.5
 
