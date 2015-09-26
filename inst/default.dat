@@ -15,8 +15,8 @@
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
 SecPistCoef   -150.0  -149.9  -29.8
-SecXTiltCoef  -445.0  0.0  0.0
-SecYTiltCoef  160.0  0.1  0.3
+SecXTiltCoef  -455.0  0.0  0.0
+SecYTiltCoef  190.0  0.1  0.3
 SecXTransCoef   0.0  0.1  0.2
 SecYTransCoef  -2750.0  180.0  380.0
 ! Tilt and Translation adjusted 2015-07-26 according to autocollimator
