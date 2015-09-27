@@ -1,0 +1,19 @@
+!+ 19-JUN-2008 07:56:13.11
+! Fastcam rapid frame grabber (block copied from spicam via shack)
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr        640,     512		! RM 2004-06-02
+IIm_Scale   21718.3,   21718.3		! RM 2008-07-28
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1280,    1024
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc   400                            ! RM 2008-07-28
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy  0.0100, -0.0037   	        ! RM 2008-08-23
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  -45.0 			! RM 2008-06-18
+
