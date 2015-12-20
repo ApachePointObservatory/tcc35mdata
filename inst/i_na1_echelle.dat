@@ -21,7 +21,7 @@ TertYTransCoef  -527.3  9.9  -2.5
 
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr       212.0,     212.0		! RM 2015-09-09
+IIm_Ctr       211.0,     216.0		! RM 2015-12-20
 IIm_Scale  -27184.9, 26910.9		! JMD 2012-02-08
                                         !
 ! min and max instrument image coordinates (unbinned pixels)
