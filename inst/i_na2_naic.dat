@@ -1,0 +1,26 @@
+!+
+! NMSU Acousto-optic Imaging Camera (NAIC)
+!-
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr      512.0,      512.0          ! RM 2016-03-28
+IIm_Scale  70109.3       70842.8        ! CG 3/28/2016 
+! min and max instrument image coordinates
+IIm_MinXY       0,         0            ! WFK 6/9/2005
+IIm_MaxXY    1024,      1024            ! RM 2016-03-28
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc     450                        ! CG 3/28/2016
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy     -0.000255,  -0.002053   ! CG 3/28/2016
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang   -89.92                    ! CG 3/28/2016
+
+! guide camera focus (piston) (um)
+GCNomFocus  35000                       ! RM 5/12/2005 (guess)
+
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -90.0,      90.0          ! RM 2016-03-28
