@@ -9,11 +9,11 @@
 
 TertPistCoef  -626.0  -6.2  1.0
 TertXTiltCoef  681.0  -51.2  51.7
-TertYTiltCoef  700.0  118.3  -27.1
+TertYTiltCoef  550.0  118.3  -27.1
 TertXTransCoef  0.9  -0.0  0.0
 TertYTransCoef  -527.3  9.9  -2.5
 
-! Constants last modified 2015-10-29 AB
+! Constants last modified 2016-04-21 JMD
 ! Sag coefficients REMOVED 2008-08-23 RM, reinstated 2012-08-08
 ! New sag coefficients 2012-08-09 RM
 
