@@ -26,6 +26,6 @@ GCNomFocus         60000              !  RM 2015-06-12
 InstPosLim        -0.1,    0.1
 
 ! Instrument-specific tertiary settings (which disagree with other NA2 instruments)
-TertPistCoef  -3000.0  0.0  0.0
-TertXTiltCoef  1360.0 0.0  0.0
-TertYTiltCoef   930.0  0.0  0.0
+!TertPistCoef  -3000.0  0.0  0.0
+!TertXTiltCoef  1360.0 0.0  0.0
+!TertYTiltCoef   930.0  0.0  0.0
