@@ -81,7 +81,7 @@ GProbe   1     T    ! probe number, exists?
   512.0      512.0  ! center of probe (guide image x,y unbinned pix)
     0          0    ! lower left corner of probe (guide image x,y unbinned pix)
  1024       1024    ! upper right corner of probe (guide image x,y unbinned pix)
--0.221478  0.000845 ! position of rotator with respect to probe center (x,y deg on sky); 2016-05-19 JMD; changed for tcc 1.2.0b4 RO 2015-06-03
+-0.234767  0.000845 ! position of rotator with respect to probe center (x,y deg on sky); 2016-07-24 CG; changed for tcc 1.2.0b4 RO 2015-06-03
   -179.62            ! angle of rotator with respect to guide image (deg); 2016-05-19 JMD
 ! number of probe used for pointing error measurements
 PtErrProbe   1
