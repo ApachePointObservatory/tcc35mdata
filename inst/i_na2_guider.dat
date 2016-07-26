@@ -5,7 +5,7 @@
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
 IIm_Ctr      512,     512		! RM 2004-11-26
-IIm_Scale  -26328.4, 25995.5		! 2016-05-19 JMD
+IIm_Scale  -26310.0, 26374.1		! 2016-07-26 RM
 ! min and max instrument image coordinates (unbinned pixels)
 IIm_MinXY       0,       0
 IIm_MaxXY    1024,    1024
@@ -15,11 +15,11 @@ Inst_Foc  -50                           ! RM 2006-10-18
 
 ! position of the center of the rotator in instrument frame
 ! WARNING: copy changes to ip_na2.dat GProbe
-Rot_Inst_xy  -0.234767, 0.000845         ! 2016-07-24 CG
+Rot_Inst_xy  -0.234773, 0.000334         ! 2016-07-26 RM
 
 ! angle from the instrument x axis to the rotator x axis
 ! WARNING: copy changes to ip_na2.dat GProbe
-Rot_Inst_ang -179.62 			! 2016-05-19 JMD
+Rot_Inst_ang -179.42 			! 2016-07-26 RM
 
 ! nominal focus setting (piston) for this camera (um)
 ! net focus = nominal focus + user focus + filter-specific focus correction
