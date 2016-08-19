@@ -4,8 +4,8 @@
 !
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr     520.0,     512.0	! center of CCD (sweet spot)  2015-12-20 RM
-IIm_Scale  -22196.3, 22198.7	! 2015-06-02 RM    
+IIm_Ctr     520.0,     504.0	! center of CCD (sweet spot)  2016-08-19 TR
+IIm_Scale  -22339.0, 22141.8	! 2016-08-19 RM    
 ! min and max instrument image coordinates (unbinned image units)
 IIm_MinXY     0,    0
 IIm_MaxXY  1024,  1024
@@ -16,9 +16,9 @@ Inst_Foc  -200                           ! 2011-05-26 RM
 ! net focus = nominal focus + user focus + filter-specific focus correction
 GCNomFocus     22000			! 2007-03-15 RM
 ! position of the center of the rotator in instrument frame
-Rot_Inst_xy   -0.008341, -0.001402	! 2015-06-02 JMD
+Rot_Inst_xy   -0.008413, -0.001214	! 2016-08-19 RM
 ! angle from the instrument x axis to the rotator x axis
-Rot_Inst_ang   179.34 			! 2015-06-02 
+Rot_Inst_ang   179.85 			! 2016-08-19 RM 
 !
 ! min, max rotator position due to the instrument (deg)
 ! note: the net position limits are the intersection of this
