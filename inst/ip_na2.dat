@@ -61,7 +61,7 @@ GIm_MaxCount  65535  ! 16 bits/pixel
 ! (for GCAM commands; used when user does not specify center)
 GIm_Ctr         512.0     512.0
 ! guide image scale (unbinned pix/deg on sky)
-GIm_Scale    -26310.0   26374.1  ! 2016-07-26 RM
+GIm_Scale    -26554.8   26258.5  ! 2016-11-11 RM
 ! minimum and maximum position on guide image (unbinned pix)
 GIm_MinXY         0         0
 GIm_MaxXY      1024      1024
@@ -81,8 +81,8 @@ GProbe   1     T    ! probe number, exists?
   512.0      512.0  ! center of probe (guide image x,y unbinned pix)
     0          0    ! lower left corner of probe (guide image x,y unbinned pix)
  1024       1024    ! upper right corner of probe (guide image x,y unbinned pix)
--0.234773  0.000334 ! position of rotator with respect to probe center (x,y deg on sky); 2016-07-26 RM; changed for tcc 1.2.0b4 RO 2015-06-03
-  -179.42            ! angle of rotator with respect to guide image (deg); 2016-07-26 RM
+-0.235039  0.001243 ! position of rotator with respect to probe center (x,y deg on sky); 2016-11-11 RM; changed for tcc 1.2.0b4 RO 2015-06-03
+  -179.46            ! angle of rotator with respect to guide image (deg); 2016-11-11 RM
 ! number of probe used for pointing error measurements
 PtErrProbe   1
 
