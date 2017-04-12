@@ -8,20 +8,20 @@
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
 
 TertPistCoef  -626.0  -6.2  1.0
-TertXTiltCoef  710.0  -51.2  51.7
-TertYTiltCoef  440.0  118.3  -27.1
+TertXTiltCoef  710.0  -31.2  -28.3
+TertYTiltCoef  540.0  28.0  -57.1
 TertXTransCoef  0.9  -0.0  0.0
 TertYTransCoef  -527.3  9.9  -2.5
 
 ! Constants last modified 2016-06-22 JMD
 ! Sag coefficients REMOVED 2008-08-23 RM, reinstated 2012-08-08
-! New sag coefficients 2012-08-09 RM
+! New sag coefficients 2017-04-12 TJR
 
 ! Slitviewer
 
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr       214.0,     218.2		! RM  2017-02-10
+IIm_Ctr       214.0,     215.0		! TJR 2017-04-12
 IIm_Scale  -27184.9, 26910.9		! JMD 2012-02-08
                                         !
 ! min and max instrument image coordinates (unbinned pixels)
