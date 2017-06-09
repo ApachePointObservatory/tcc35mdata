@@ -14,7 +14,7 @@ IIm_MaxXY          640.0   512.0     ! RM 2015-01-12
 ! focus (secondary piston) offset due to instrument (um)
 Inst_Foc            -1500.0
 ! position of the center of the rotator in instrument frame (x,y deg)
-Rot_Inst_xy        -0.004,   0.0044    ! RM 2015-06-10
+Rot_Inst_xy        -0.0027,   -0.0081    ! RM 2017-06-09
 ! angle from the instrument x axis to the rotator x axis (deg)
 Rot_Inst_ang       0.0               !  RM 2015-06-10
 GCNomFocus         60000              !  RM 2015-06-12
