@@ -8,8 +8,8 @@
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
 
 TertPistCoef  -626.0  -6.2  1.0
-TertXTiltCoef  710.0  -31.2  -28.3
-TertYTiltCoef  540.0  28.0  -57.1
+TertXTiltCoef  500.0  -31.2  -28.3
+TertYTiltCoef  940.0  28.0  -57.1
 TertXTransCoef  0.9  -0.0  0.0
 TertYTransCoef  -527.3  9.9  -2.5
 
@@ -21,7 +21,7 @@ TertYTransCoef  -527.3  9.9  -2.5
 
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr       214.0,     215.0		! TJR 2017-04-12
+IIm_Ctr       216.0,     219.0		! RM 2017-09-02
 IIm_Scale  -27184.9, 26910.9		! JMD 2012-02-08
                                         !
 ! min and max instrument image coordinates (unbinned pixels)
