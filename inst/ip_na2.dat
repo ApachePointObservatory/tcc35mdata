@@ -36,7 +36,7 @@ RotLim   -360.0     360.0      3.5        0.7           7.0
 !
 ! 2007-09-11 NM&LC, measured in the dome at 90deg.
 ! Sag coefficients zeroed 2008-09-15 RM
-! Tilt coefficients changed 2014-03-21 JD
+! Tilt coefficients changed 2017-12-10 RM
 ! Piston coefficients changed 2009-07-12 GS
 !
 
