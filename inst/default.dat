@@ -15,10 +15,11 @@
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
 SecPistCoef   -50.0  -60.0  5.0
-SecXTiltCoef  -445.0  0.0  0.0
-SecYTiltCoef   110.0  0.1  0.3
-SecXTransCoef  250.0  0.1  0.2
-SecYTransCoef  280.0  180.0  380.0
+SecXTiltCoef  -445.0  0.0  0.0  
+SecYTiltCoef   110.0  0.0  0.0 
+SecXTransCoef   50.0  0.0  0.0  ! 2018-05-31 RM
+SecYTransCoef  650.0  180.0  380.0  ! 2081-05-31 RM
+
 
 ! Tilt and Translation adjusted 2017-08-18 according to autocollimator
 ! Tilt constants adjusted 2017-09-06 RM
