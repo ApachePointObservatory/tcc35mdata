@@ -1,0 +1,26 @@
+!+
+! ARC Telescope Imaging Camera
+!-
+!
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr      2000,     2000		! RM 2015-09-27
+IIm_Scale    31310.9   31312.5          ! TR 2017-06-14
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       1,       1
+IIm_MaxXY    4096,    4096
+!
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc   -50                          ! RM 2015-10-17
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy  -0.001651, 0.001393        ! TR 2017-06-14
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  -.046      	        ! TR 2017-06-14
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus     0	        	! RM 2015-06-16
+!
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0, 270.0

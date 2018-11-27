@@ -15,8 +15,8 @@
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
 SecPistCoef   -50.0  -60.0  5.0
-SecXTiltCoef  -170.0  0.0  0.0  
-SecYTiltCoef   330.0  0.0  0.0 
+SecXTiltCoef  -140.0  0.0  0.0  
+SecYTiltCoef   290.0  0.0  0.0 
 SecXTransCoef -650.0  0.0  0.0  
 SecYTransCoef 1820.0  180.0  380.0  
 
