@@ -39,7 +39,7 @@ RotLim   -270.0     270.0      3.5        0.7           7.0
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
 IIm_Ctr       512,     512		! WFK 2009-06-05
-IIm_Scale   27778.6, 27636.5		! 2013-06-26 RM
+IIm_Scale   27570.4, 27429.4		! 2019-04-19 DD
                                         !
 ! min and max instrument image coordinates (unbinned pixels)
 IIm_MinXY       0,       0
@@ -55,11 +55,11 @@ InstPosLim  -180.0, 180.0
 
 ! position of the center of the rotator in instrument frame
 ! WARNING: copy changes to GProbe below
-Rot_Inst_xy   0.000704, 0.001101          ! 2013-06-26 RM
+Rot_Inst_xy   -0.000834, 0.001122          ! 2019-04-19 DD
 
 ! angle from the instrument x axis to the rotator x axis
 ! WARNING: copy changes to GProbe below
-Rot_Inst_ang   -89.64         	         ! 2013-06-26 RM
+Rot_Inst_ang   -89.65         	         ! 2019-04-19 DD
 
 ! Guide Camera Image
 ! This tells TCC that Agile has a guide camera located exactly on the boresight,
@@ -77,8 +77,8 @@ GProbe   1     T    ! probe number, exists?
   512.0      512.0  ! center (x,y unbinned pix)
     0          0    ! mininum (x,y unbinned pix)
  1024       1024    ! maximum (x,y unbinned pix)
- 0.000704  0.001101 ! position of rotator with respect to probe center (x,y deg on sky); a copy of Rot_Inst_xy
-     -89.64         ! angle of rotator with respect to guide image (deg): a copy of Rot_Inst_ang
+ -0.000834  0.001122 ! position of rotator with respect to probe center (x,y deg on sky); a copy of Rot_Inst_xy
+     -89.65         ! angle of rotator with respect to guide image (deg): a copy of Rot_Inst_ang
 ! number of probe used for pointing error measurements
 PtErrProbe   1
 
@@ -92,7 +92,7 @@ GIm_MaxCount  65535  ! 16 bits/pixel
 ! (for GCAM commands; used when user does not specify center)
 GIm_Ctr         512.0     512.0
 ! guide image scale (unbinned pix/deg on sky)
-GIm_Scale    -27784.4   27569.0 ! 2009-09-03 RM
+GIm_Scale    -27570.4   27429.4 ! 2019-04-19 DD
 ! minimum and maximum position on guide image (unbinned pix)
 GIm_MinXY         0         0
 GIm_MaxXY      1024      1024

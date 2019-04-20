@@ -11,7 +11,7 @@ IIm_MinXY     0,    0
 IIm_MaxXY  1024,  1024
 !
 ! focus (secondary piston) offset due to instrument (um)
-Inst_Foc  -200                           ! 2011-05-26 RM
+Inst_Foc  -300                           ! 2019-03-22 RM
 ! nominal focus setting (piston) for this camera (um)
 ! net focus = nominal focus + user focus + filter-specific focus correction
 GCNomFocus     22000			! 2007-03-15 RM
