@@ -21,8 +21,8 @@ TertYTransCoef  -527.3  9.9  -2.5
 
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr       210.0,     222.0		! CG 2019-02-23
-IIm_Scale  -27184.9, 26910.9		! JMD 2012-02-08
+IIm_Ctr       236.0,     256.0		! RM 2019-05-16 FLI 
+IIm_Scale  -27421.4,   27145.0		! RM 2019-05-16 FLI 
                                         !
 ! min and max instrument image coordinates (unbinned pixels)
 IIm_MinXY       0,       0
@@ -37,7 +37,7 @@ Rot_Inst_xy  0.0,  0.00         	! 2009-07-13 RM
 
 ! angle from the instrument x axis to the rotator x axis
 ! WARNING: copy changes to GProbe below
-Rot_Inst_ang   	0.23     		! JMD 2012-02-08
+Rot_Inst_ang   	-0.54     		! RM 2019-05-16 FLI
 
 ! Guide Camera Image
 ! Photometrics Sensys camera; 1536x1024, probably with 9 um pixels
@@ -69,7 +69,7 @@ Gim_BinFac       1         1
 ! position of guide camera probe w.r.t. rotator (x,y deg on sky)
 ! angle from the guide image x axis to rotator x axis (deg)
 GProbe    1    T    ! probe number, exists?
-  215.0      221.0  ! center (x,y unbinned pix)
+  236.0      256.0  ! center (x,y unbinned pix)
     0          0    ! mininum (x,y unbinned pix)
   512        512    ! maximum (x,y unbinned pix)
  0.0 0.0            ! position of rotator with respect to probe center (x,y deg on sky); a copy of Rot_Inst_xy
