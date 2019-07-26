@@ -4,7 +4,7 @@
 !
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr     520.0,     509.0	! center of CCD (sweet spot)  2018-05-23 RM
+IIm_Ctr     520.0,     533.0	! center of CCD (sweet spot)  2019-07-20 RM
 IIm_Scale  -22182.3, 22141.2	! 2017-09-13 RM    
 ! min and max instrument image coordinates (unbinned image units)
 IIm_MinXY     0,    0

@@ -14,17 +14,17 @@
 
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
-SecPistCoef   150.0  -60.0  5.0  ! RM 2019-03-22
-SecXTiltCoef  -120.0  0.0  0.0  
-SecYTiltCoef   335.0  0.0  0.0 
-SecXTransCoef -650.0  0.0  0.0  
-SecYTransCoef 1820.0  180.0  380.0  
+SecPistCoef    150.0   -60.0    5.0  ! RM 2019-07-21
+SecXTiltCoef  -240.0    0.0    0.0  
+SecYTiltCoef   450.0    0.0    0.0 
+SecXTransCoef    0.0    0.0    0.0  
+SecYTransCoef   20.0  180.0  380.0  
 
 
-! Tilt and Translation adjusted 2018-09-05 according to autocollimator
-! Tilt constants adjusted 2018-12-25 RM
+! Tilt and Translation adjusted 2019-07-20 according to autocollimator
+! Tilt constants adjusted 2019-07-20 RM
 ! Sec coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
-! SecPistCoef adjusted 2015-10-28 by RM after measurements with ARCTIC
+! SecPistCoef adjusted 2019-07-20 by RM after measurements with ARCTIC
 ! SecYTrans set to be 0 at alt 85 where autocollimator was used
 
 ! secondary piston (focus) temperature coefficients (in um/C)
@@ -35,8 +35,8 @@ SecYTransCoef 1820.0  180.0  380.0
 !   primary to secondary distance = 6.17 m
 !   CTE = 11.7 um/m-C (steel) - 2.8 um/m-C (E-6 glass)
 !                  Truss   Prim F  Prim B-F   Sec F   Sec B-F
-SecPistTempCoef     51.0     0.0      0.0      0.0      0.0  ! RM 2011-05-26
-!SecPistTempCoef    43.0     0.0      0.0      0.0      0.0  ! before September 2006
+SecPistTempCoef     47.0     0.0      0.0      0.0      0.0  ! RM 2019-07-26
+!SecPistTempCoef    51.0     0.0      0.0      0.0      0.0  ! before July 2019
 
 ! maximum scale factor; set <= 1 to disable scale adjustment
 ! note: minimum scale factor = 1/MaxScaleFac
