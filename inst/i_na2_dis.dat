@@ -4,14 +4,14 @@
 !
 ! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
 ! center is desired loc. of zero boresight; it need not be geometric center
-IIm_Ctr     520.0,     533.0	! center of CCD (sweet spot)  2019-07-20 RM
+IIm_Ctr     520.0,     521.0	! center of CCD (sweet spot)  2019-10-06 RM
 IIm_Scale  -22182.3, 22141.2	! 2017-09-13 RM    
 ! min and max instrument image coordinates (unbinned image units)
 IIm_MinXY     0,    0
 IIm_MaxXY  1024,  1024
 !
 ! focus (secondary piston) offset due to instrument (um)
-Inst_Foc  -300                           ! 2019-03-22 RM
+Inst_Foc  -230                           ! 2019-08-06 RM
 ! nominal focus setting (piston) for this camera (um)
 ! net focus = nominal focus + user focus + filter-specific focus correction
 GCNomFocus     22000			! 2007-03-15 RM
