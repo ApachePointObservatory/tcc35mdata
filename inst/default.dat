@@ -18,9 +18,10 @@ SecPistCoef     50.0   -60.0    5.0  ! RM 2019-08-06
 SecXTiltCoef  -200.0    0.0    0.0  
 SecYTiltCoef   435.0    0.0    0.0 
 SecXTransCoef    0.0    0.0    0.0  
-SecYTransCoef  100.0  180.0  380.0  
+SecYTransCoef  270.0  180.0  380.0  
 ! Tilt and Translation adjusted 2020-07-10 according to autocollimator
 ! Tilt constants adjusted 2020-09-02 RM
+! Translation constants adjusted 2020-11-03 RM after primary mirror was jarred
 
 
 ! Sec coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
