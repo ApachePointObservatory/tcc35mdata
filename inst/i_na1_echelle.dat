@@ -8,12 +8,12 @@
 ! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
 
 TertPistCoef  -626.0  -6.2  1.0
-TertXTiltCoef  540.0  -131.2  -28.3
-TertYTiltCoef  720.0  108.0  -37.1
+TertXTiltCoef  600.0  -131.2  -28.3
+TertYTiltCoef  800.0  108.0  -37.1
 TertXTransCoef  0.9  -0.0  0.0
 TertYTransCoef  -527.3  9.9  -2.5
 
-! Constants last modified 2020-10-05 RM
+! Constants last modified 2020-01-03 JMD
 ! Sag coefficients REMOVED 2008-08-23 RM, reinstated 2012-08-08
 ! New sag coefficients 2020-01-01 RM
 
