@@ -1,0 +1,30 @@
+! KOSMOS slit viewer
+! 
+!-
+!
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr    530.0,   545.0	! center of CCD (sweet spot) 2023-12-21 JMD
+IIm_Scale  -10262.8, 10251.4	! 2025-02-14 CG
+! min and max instrument image coordinates (unbinned image units)
+IIm_MinXY     0,    0
+IIm_MaxXY  1024,  1024
+!
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc  -150                             ! 11-12-2024 CG
+! Inst_Foc MUST BE the same for i_na2_kosmos.dat and i_na2_kimage.dat
+
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus     34000			! 10-19-2021 RM
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy   -0.000730, 0.000991       ! 2022-08-15 AJT
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang   90.04 			! 2025-02-14 CG 
+!
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0, 270.0
+!

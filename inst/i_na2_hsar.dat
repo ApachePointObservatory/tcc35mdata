@@ -1,0 +1,42 @@
+!+
+! Los Alamos HSAR
+!-
+!
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr        340,     512		! RM 2022-09-09
+IIm_Scale   8704.2   8774.1             ! RM 2022-09-09
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       1,       1
+IIm_MaxXY     680,    1024
+!
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc   -50                          ! RM 2022-06-10
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy  0.0, 0.0                   ! RM 2022-06-10
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  90.03        	        ! RM 2022-09-09
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus     0	        	! RM 2015-06-16
+!
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -90.0, 90.0
+
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+!
+!
+
+! TertPistCoef  -1300.0  0.0  0.0
+! TertXTiltCoef -2550.0 0.0  0.0
+! TertYTiltCoef  -1200.0  0.0  0.0
+! TertXTransCoef   0.0  0.0  0.0
+! TertYTransCoef -1300.0  0.0  0.0
+! Copied from ip_na2.dat 2022-09-08 RM, then altered 2023-04-04 RM to align receiver with transmitter
+! then removed 2023-04-06 RM after receiver changed

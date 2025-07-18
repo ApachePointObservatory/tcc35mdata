@@ -1,0 +1,48 @@
+# Name of object 
+# Optional: defaults to the empty string.
+name               "lageos1"
+# Approx. Highest position in sky: 52.0
+# Approx. azimuth start: 147.9
+# Sunlit: Yes
+# Points in Polynomial: 22
+
+# Coordinate system code and date 
+# Optional: defaults to appgeo 0 
+# Choices (which are case-sensitive) include: 
+# icrs: ICRS; date is date of observation (Julian years); 0 means now 
+# appgeo: apparent geocentric; date is date of equinox (Julian years); 0 means now 
+# apptopo: apparent topocentric; date is TAI (MJD, sec); 0 means now 
+# obs: refracted apparent topocentric; date is TAI (MJD, sec); 0 means now
+userSys   apptopo 0
+
+
+# Chebyshev polynomial coefficients for track/chebyshev 
+# The format is minTAI  maxTAI  coeff0  coeff1... 
+# where: 
+# - minTAI and maxTAI are the minimum and maximum allowed TAI date, in MJD, seconds 
+#   (tracking will fail if you use these polynomials outside this date range) 
+# - The polynomial is evaluated with x ranging from -1 to 1 over the specified date range 
+# Chebyshev coefficients for object position, az (deg)
+chebyUser1 5242271737   5242278037 53.9065023 -53.0608227 -39.3519725 63.6156249 -26.057573 18.017217 -11.8026293 5.61501373 7.41231864 -19.7561147 19.5755498 -29.8034347 25.8327723 -32.8652754 22.9340547 -25.1732481 15.6365914 -14.8094104 7.37752435 -5.72479958 2.23996501 -1.26272136 0.215857345
+# Chebyshev coefficients for object position, alt (deg)
+chebyUser2 5242271737   5242278037 -1.85875146 -20.9250272 -43.49669 -20.1078329 2.08739736 -9.42948626 -5.63325039 -1.44512061 2.85279912 7.69388613 4.05854783 12.3310744 6.18793412 13.315667 5.23492287 10.2930931 3.67470722 5.99767598 1.71182012 2.32371712 0.537517748 0.499093383 0.0526957016
+# Chebyshev coefficients for object distance (au)
+chebydist 5242271737   5242278037 7.03420404e-05 -9.13163766e-07 2.23436483e-05 9.64864489e-07 -3.04177683e-06 -2.13591255e-07 5.31841272e-07 6.28521207e-08 -1.23460393e-07 -2.48940318e-08 2.28715474e-08 -1.84128811e-09 -1.96732139e-08 -1.13245317e-08 -7.36555216e-09 -6.30316918e-09 -7.50875692e-09 -4.43459136e-09 -3.07582617e-09 -1.57220502e-09 -1.10908316e-09 -4.13135792e-10 -1.16831153e-10
+
+# Type of rotation (e.g. with object or horizon) 
+# Optional; defaults to none 
+# see rotUser for choices
+rotType none
+
+# Rotator angle as position velocity time (TAI, MDJ).
+# Optional; defaults to nan nan nan
+# The exact meaning depends on rotType (which is case sensitive):
+# - object: the angle of the user coordinate system w.r.t. the instrument.
+# - horizon: the angle of az/alt w.r.t the instrument
+# - mount: the angle sent to the axis controller
+# - none: no rotation
+rotUser 0 0 1
+
+# Predicted magnitude of object
+# Optional: defaults to nan
+#mag        9    

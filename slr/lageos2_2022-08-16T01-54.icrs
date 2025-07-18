@@ -1,0 +1,46 @@
+# Name of object 
+# Optional: defaults to the empty string.
+name               "lageos2"
+# Approx. Highest position in sky: 41.8
+# Points in Polynomial: 17
+
+# Coordinate system code and date 
+# Optional: defaults to appgeo 0 
+# Choices (which are case-sensitive) include: 
+# icrs: ICRS; date is date of observation (Julian years); 0 means now 
+# appgeo: apparent geocentric; date is date of equinox (Julian years); 0 means now 
+# apptopo: apparent topocentric; date is TAI (MJD, sec); 0 means now 
+# obs: refracted apparent topocentric; date is TAI (MJD, sec); 0 means now
+userSys   icrs 0
+
+
+# Chebyshev polynomial coefficients for track/chebyshev 
+# The format is minTAI  maxTAI  coeff0  coeff1... 
+# where: 
+# - minTAI and maxTAI are the minimum and maximum allowed TAI date, in MJD, seconds 
+#   (tracking will fail if you use these polynomials outside this date range) 
+# - The polynomial is evaluated with x ranging from -1 to 1 over the specified date range 
+# Chebyshev coefficients for object position, ra (deg)
+chebyUser1 5167331437   5167336537 325.017874 0.024892262 0.00125044874 7.78693807e-05 -3.24000978e-05 -1.46399438e-06 2.51487645e-07 1.66241205e-08 6.83944483e-10
+# Chebyshev coefficients for object position, dec (deg)
+chebyUser2 5167331437   5167336537 -13.942805 0.00641724013 -0.000466366669 0.000130144476 1.30746153e-05 -1.77766852e-06 -1.44887603e-07 3.12202106e-09 8.66728718e-10
+# Chebyshev coefficients for object distance (au)
+chebydist 5167331437   5167336537 1.00464971 5.49446995e-05 2.34942814e-06 -3.4665096e-06 -8.22029279e-08 4.98890133e-08 1.61366104e-09 -1.79414578e-10 -2.40689225e-11
+
+# Type of rotation (e.g. with object or horizon) 
+# Optional; defaults to none 
+# see rotUser for choices
+rotType none
+
+# Rotator angle as position velocity time (TAI, MDJ).
+# Optional; defaults to nan nan nan
+# The exact meaning depends on rotType (which is case sensitive):
+# - object: the angle of the user coordinate system w.r.t. the instrument.
+# - horizon: the angle of az/alt w.r.t the instrument
+# - mount: the angle sent to the axis controller
+# - none: no rotation
+rotUser 0 0 1
+
+# Predicted magnitude of object
+# Optional: defaults to nan
+#mag        9    

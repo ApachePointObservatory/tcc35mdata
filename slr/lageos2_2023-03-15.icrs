@@ -1,0 +1,54 @@
+# Name of object 
+# Optional: defaults to the empty string.
+name               "lageos2"
+# Approx. Highest position in sky: 76.6
+# Approx. azimuth start: 313.5
+# Sunlit: Yes
+# Points in Polynomial: 23
+
+
+#ALTERED START TIME to 00:41 FOR TESTING 
+
+# Coordinate system code and date 
+# Optional: defaults to appgeo 0 
+# Choices (which are case-sensitive) include: 
+# icrs: ICRS; date is date of observation (Julian years); 0 means now 
+# appgeo: apparent geocentric; date is date of equinox (Julian years); 0 means now 
+# apptopo: apparent topocentric; date is TAI (MJD, sec); 0 means now 
+# obs: refracted apparent topocentric; date is TAI (MJD, sec); 0 means now
+userSys   icrs 0
+
+
+# Chebyshev polynomial coefficients for track/chebyshev 
+# The format is minTAI  maxTAI  coeff0  coeff1... 
+# where: 
+# - minTAI and maxTAI are the minimum and maximum allowed TAI date, in MJD, seconds 
+#   (tracking will fail if you use these polynomials outside this date range) 
+# - The polynomial is evaluated with x ranging from -1 to 1 over the specified date range 
+# Chebyshev coefficients for object position, ra (deg)
+#chebyUser1 5185559737   5185566637 174.489215 0.0330431423 0.00190805224 0.000180173245 -0.000104404246 -3.49991345e-06 2.14530234e-06 -7.76144025e-08 -1.89650247e-08 5.60031293e-09 -1.16475971e-09 2.20565083e-09 -1.3019459e-09 2.51234722e-09 -1.25338584e-09 2.07193621e-09 -9.05978516e-10 1.28419757e-09 -4.87106119e-10 5.63247521e-10 -1.76933481e-10 1.48460801e-10 -3.35299486e-11 1.33645977e-11
+chebyUser1 5185599337   5185606237 174.489215 0.0330431423 0.00190805224 0.000180173245 -0.000104404246 -3.49991345e-06 2.14530234e-06 -7.76144025e-08 -1.89650247e-08 5.60031293e-09 -1.16475971e-09 2.20565083e-09 -1.3019459e-09 2.51234722e-09 -1.25338584e-09 2.07193621e-09 -9.05978516e-10 1.28419757e-09 -4.87106119e-10 5.63247521e-10 -1.76933481e-10 1.48460801e-10 -3.35299486e-11 1.33645977e-11
+# Chebyshev coefficients for object position, dec (deg)
+#chebyUser2 5185559737   5185566637 2.39787635 -0.0181487675 -0.00120837667 0.000385733089 6.02321586e-05 -1.29511067e-05 -7.46010247e-07 2.20544401e-07 -1.3558305e-08 -2.4847362e-09 1.09425259e-09 -1.09284739e-09 6.83110784e-10 -1.17396417e-09 6.56141258e-10 -9.69392324e-10 4.74238361e-10 -6.01137222e-10 2.54662113e-10 -2.638064e-10 9.23295089e-11 -6.96473384e-11 1.74071045e-11 -6.27521575e-12
+chebyUser2 5185599337   5185606237 2.39787635 -0.0181487675 -0.00120837667 0.000385733089 6.02321586e-05 -1.29511067e-05 -7.46010247e-07 2.20544401e-07 -1.3558305e-08 -2.4847362e-09 1.09425259e-09 -1.09284739e-09 6.83110784e-10 -1.17396417e-09 6.56141258e-10 -9.69392324e-10 4.74238361e-10 -6.01137222e-10 2.54662113e-10 -2.638064e-10 9.23295089e-11 -6.96473384e-11 1.74071045e-11 -6.27521575e-12
+# Chebyshev coefficients for object distance (au)
+#chebydist 5185559737   5185566637 1.00309815 7.80214879e-05 -3.77229154e-06 -7.77291416e-06 2.94656221e-07 2.31505559e-07 -1.33464308e-08 -2.37876559e-09 4.149895e-10 -1.93366635e-11 -5.25272091e-12 4.88823938e-12 1.52000907e-12 4.10534887e-12 1.52191836e-12 3.39512423e-12 1.10797736e-12 2.10530584e-12 6.06594878e-13 9.23066957e-13 2.31947264e-13 2.42970515e-13 4.85791884e-14 2.1857081e-14
+chebydist 5185599337   5185606237 1.00309815 7.80214879e-05 -3.77229154e-06 -7.77291416e-06 2.94656221e-07 2.31505559e-07 -1.33464308e-08 -2.37876559e-09 4.149895e-10 -1.93366635e-11 -5.25272091e-12 4.88823938e-12 1.52000907e-12 4.10534887e-12 1.52191836e-12 3.39512423e-12 1.10797736e-12 2.10530584e-12 6.06594878e-13 9.23066957e-13 2.31947264e-13 2.42970515e-13 4.85791884e-14 2.1857081e-14
+
+# Type of rotation (e.g. with object or horizon) 
+# Optional; defaults to none 
+# see rotUser for choices
+rotType none
+
+# Rotator angle as position velocity time (TAI, MDJ).
+# Optional; defaults to nan nan nan
+# The exact meaning depends on rotType (which is case sensitive):
+# - object: the angle of the user coordinate system w.r.t. the instrument.
+# - horizon: the angle of az/alt w.r.t the instrument
+# - mount: the angle sent to the axis controller
+# - none: no rotation
+rotUser 0 0 1
+
+# Predicted magnitude of object
+# Optional: defaults to nan
+#mag        9    

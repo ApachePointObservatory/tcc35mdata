@@ -1,0 +1,27 @@
+!+
+! Differential Speckle Survey Instrument (DSSI)
+!-
+!
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr      512,      512		! RM 2022-05-10
+IIm_Scale  165633.3, 156604.1           ! RM 2022-05-10
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1024,     1024
+!
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc   250                         ! RM 2022-05-12
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy -0.002171, -0.002389           ! RM  2022-11-11
+
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  0.94	     	       	! RM 2022-05-10
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus  38000	        	! RM 2022-05-100
+!
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0, 270.0

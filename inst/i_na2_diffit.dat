@@ -1,0 +1,28 @@
+!+
+! DIstributed Field Fiber Imaging Testbed (DIFFIT)
+!
+!-
+!
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr      808,      186		! RM 2024-09-16
+IIm_Scale  52789.9,  52294.1            ! RM 2024-09-16
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1280,     960
+!
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc    50                         ! RM 2024-09-17
+! position of the center of the rotator in instrument frame
+Rot_Inst_xy -0.000375, -0.000409       ! RM  2024-09-16
+
+! angle from the instrument x axis to the rotator x axis
+Rot_Inst_ang  2.99	     	       	! RM 2024-09-16
+! nominal focus setting (piston) for this camera (um)
+! net focus = nominal focus + user focus + filter-specific focus correction
+GCNomFocus  38000	        	! RM 2022-05-100
+!
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -270.0, 270.0

@@ -1,0 +1,39 @@
+
+!+
+! AXES LIMITS BLOCK
+!
+! 2006-04-13 ROwen raised jerk limits
+! 2009-09-04 FRS changed altitude a, j terms for new drives
+! 2014-06-17 ROwen lowered azimuth vel, accel and jerk limits at Mark Klaene's request.
+! 2014-08-08 ROwen corrected az upper limit to 85.0 from 87.2.
+!-
+
+
+!   Basic Mount Limits
+!   axes are: tel az/eq, tel alt/dec, rot, gcam r/x, gcam theta/y
+
+! Minimum Position (deg)
+MinPos   -180       6       -180.0
+! Maximum Position (deg) 
+MaxPos    360      85.0     180.0
+! Maximum |velocity| (deg*/sec)
+Vel         1.75     1.50      3.5
+! Mmaximum |acceleration| (deg*/sec^2)
+Accel       0.1     0.1      0.7
+! Maximum |jerk| (deg*/sec^3) (ignored for uncomputed offsets).
+Jerk        0.5     0.5      7.0
+
+!   Status Related Parameters
+
+! Fail if any of these bits is high in a status word
+! note: intentionally excludes the stop button
+BadStatusMask    13464012 ! 0x00CD71CC = bits 2, 3, 6, 7, 8, 12, 13, 14, 16, 18, 19, 22, 23
+! Warn if any of these bits is high in a status word
+WarnStatusMask 1627652147 ! 0x61040033 = bits 0, 1, 4, 5, 18, 24, 29, 30
+! Maximum delta-time between axis controller and TCC, in sec
+MaxDTime 0.4
+
+!+
+! END OF AXES LIMITS BLOCK
+!-
+

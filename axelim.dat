@@ -13,15 +13,15 @@
 !   axes are: tel az/eq, tel alt/dec, rot, gcam r/x, gcam theta/y
 
 ! Minimum Position (deg)
-MinPos   -180       6       0
+MinPos   -180       6       -180.0
 ! Maximum Position (deg) 
-MaxPos    360      85.0     0
+MaxPos    360      85.0     180.0
 ! Maximum |velocity| (deg*/sec)
-Vel         1.25     1.50      0
-! Mmaximum |acceleration| (deg*/sec^2)
-Accel       0.10     0.10      0
+Vel         1.75     1.5      3.5
+! Maximum |acceleration| (deg*/sec^2)
+Accel       0.1     0.1      0.7
 ! Maximum |jerk| (deg*/sec^3) (ignored for uncomputed offsets).
-Jerk        0.50     0.50      0
+Jerk        0.5     0.5      7.0
 
 !   Status Related Parameters
 

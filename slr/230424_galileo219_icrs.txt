@@ -1,0 +1,48 @@
+# Name of object 
+# Optional: defaults to the empty string.
+name               "01"
+# Approx. Highest position in sky: 68.0
+# Approx. azimuth start: -159.7
+# Sunlit: from at least 20:15
+# Points in Polynomial: 48
+
+# Coordinate system code and date 
+# Optional: defaults to appgeo 0 
+# Choices (which are case-sensitive) include: 
+# icrs: ICRS; date is date of observation (Julian years); 0 means now 
+# appgeo: apparent geocentric; date is date of equinox (Julian years); 0 means now 
+# apptopo: apparent topocentric; date is TAI (MJD, sec); 0 means now 
+# obs: refracted apparent topocentric; date is TAI (MJD, sec); 0 means now
+userSys   icrs 0
+
+
+# Chebyshev polynomial coefficients for track/chebyshev 
+# The format is minTAI  maxTAI  coeff0  coeff1... 
+# where: 
+# - minTAI and maxTAI are the minimum and maximum allowed TAI date, in MJD, seconds 
+#   (tracking will fail if you use these polynomials outside this date range) 
+# - The polynomial is evaluated with x ranging from -1 to 1 over the specified date range 
+# Chebyshev coefficients for object position, ra (deg)
+chebyUser1 5189069719   5189112919 211.671907 0.223770963 0.00437249166 0.00244040646 -0.000807002843 -0.000244463117 5.12340067e-05 1.0500423e-05 -1.78644818e-06 -3.08327829e-07 1.25950917e-08 -2.95328017e-09 1.78165682e-08 4.97265581e-08 5.5770866e-08 9.14153206e-08 8.2114743e-08 1.17612745e-07 9.55646155e-08 1.26802262e-07 9.62944571e-08 1.20643256e-07 8.65662279e-08 1.03134449e-07 7.01143126e-08 7.95886613e-08 5.11766685e-08 5.52909458e-08 3.34606902e-08 3.42939412e-08 1.93741148e-08 1.87332806e-08 9.76305391e-09 8.83258964e-09 4.17580114e-09 3.49160699e-09 1.4632111e-09 1.10964638e-09 4.00838108e-10 2.66964728e-10 8.22877146e-11 4.58698431e-11 1.21558824e-11 5.2777411e-12 1.22133538e-12 3.64845194e-13 7.4981188e-14 1.15014331e-14 2.13180624e-15
+# Chebyshev coefficients for object position, dec (deg)
+chebyUser2 5189069719   5189112919 -12.8100766 -0.0760033516 -0.00720478205 -0.00213689503 0.00135816313 0.000213658411 -8.67265952e-05 -9.16006464e-06 2.89378416e-06 2.20293191e-07 -5.19489759e-08 1.68516781e-09 -5.004458e-09 -1.67109567e-08 -1.72554273e-08 -3.02699961e-08 -2.54383091e-08 -3.89773468e-08 -2.96003547e-08 -4.2027785e-08 -2.98248641e-08 -3.99936128e-08 -2.68098563e-08 -3.41974668e-08 -2.1712415e-08 -2.63987771e-08 -1.58457103e-08 -1.8347827e-08 -1.03583313e-08 -1.13873346e-08 -5.99596046e-09 -6.22576834e-09 -3.02037851e-09 -2.93889837e-09 -1.29127534e-09 -1.16363321e-09 -4.52181198e-10 -3.7057702e-10 -1.23782612e-10 -8.93461496e-11 -2.53934931e-11 -1.53800633e-11 -3.74894393e-12 -1.77228316e-12 -3.76474584e-13 -1.22661997e-13 -2.3103106e-14 -3.87044319e-15 -6.56622133e-16
+# Chebyshev coefficients for object distance (au)
+chebydist 5189069719   5189112919 1.01361666 0.00019513176 0.00010578546 -7.57024629e-05 -1.97083284e-05 7.60904361e-06 1.24177021e-06 -3.38172178e-07 -3.87365983e-08 8.56628575e-09 5.34921075e-10 -1.56702066e-10 2.94058097e-11 1.01039627e-10 3.99843182e-11 1.85148313e-10 6.20097475e-11 2.3788443e-10 7.19543003e-11 2.56421643e-10 7.24673319e-11 2.43873577e-10 6.50733679e-11 2.08363233e-10 5.262041e-11 1.60667086e-10 3.83242235e-11 1.11500609e-10 2.49843661e-11 6.905819e-11 1.44027449e-11 3.76409896e-11 7.20739312e-12 1.76867953e-11 3.04824555e-12 6.95478967e-12 1.05024455e-12 2.19499926e-12 2.82232158e-13 5.24456002e-13 5.68963399e-14 8.95885828e-14 8.27455131e-15 1.02607883e-14 8.20679996e-16 7.06809153e-16 4.98541719e-17 2.22204703e-17 1.40522802e-18
+
+# Type of rotation (e.g. with object or horizon) 
+# Optional; defaults to none 
+# see rotUser for choices
+rotType none
+
+# Rotator angle as position velocity time (TAI, MDJ).
+# Optional; defaults to nan nan nan
+# The exact meaning depends on rotType (which is case sensitive):
+# - object: the angle of the user coordinate system w.r.t. the instrument.
+# - horizon: the angle of az/alt w.r.t the instrument
+# - mount: the angle sent to the axis controller
+# - none: no rotation
+rotUser 0 0 1
+
+# Predicted magnitude of object
+# Optional: defaults to nan
+#mag        9    

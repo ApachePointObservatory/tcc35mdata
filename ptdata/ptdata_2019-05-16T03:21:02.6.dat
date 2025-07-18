@@ -1,0 +1,28 @@
+! Caption record:
+APO 3.5M Pointing Data 2019-05-16T03:21:02.6
+! Option record: ALTAZ followed by rotator code, if applicable
+: ALTAZ
+: ROTL
+! Run parameters: telescope latitude deg min sec
+32 46 49.3
+! Pointing data (TPOINT format #4):
+!
+! All angles are in degrees
+! Azimuth uses the convention: N=0, E=90 (unlike the TCC, which uses S=0, E=90)
+!
+!  Desired Phys            Actual Mount          Rot Phys
+! Az          Alt         Az          Alt
+  44.014413   57.067394   44.034518   57.091174   -0.00000  ! entry 1 star 1 pt ref 3478-01332-1
+  15.981768   12.683800   16.011658   12.697507   -0.00000  ! entry 2 star 2 pt ref 4256-03042-1
+ 103.823359   45.732684  103.853037   45.747017   -0.00000  ! entry 3 star 3 pt ref 0924-00184-1
+ 149.115957   76.232501  149.139104   76.250214   -0.00000  ! entry 4 star 4 pt ref 1447-02842-1
+-141.883299   33.423850  218.141937   33.431773   -0.00000  ! entry 5 star 5 pt ref 5487-01653-1
+-108.805772   44.643194  251.217831   44.657051   -0.00000  ! entry 6 star 6 pt ref 0815-02146-1
+ 165.788013   17.747901  165.820620   17.755607   -0.00000  ! entry 7 star 7 pt ref 7774-01925-1
+-137.799277   14.947872  222.228544   14.951879   -0.00000  ! entry 8 star 8 pt ref 6580-02780-1
+ -84.294641   80.218666  275.677748   80.237912   -0.00000  ! entry 9 star 9 pt ref 2520-02631-1
+ 172.325947   29.758087  172.355139   29.765962   -0.00000  ! entry 10 star 10 pt ref 6691-01465-1
+  52.278410   20.570173   52.309136   20.581246   -0.00000  ! entry 11 star 11 pt ref 3111-02338-1
+  -7.577414   79.743082   -7.592636   79.764812   -0.00000  ! entry 12 star 12 pt ref 3019-02030-1
+ -64.985686   58.664945  -64.969826   58.682890   -0.00000  ! entry 13 star 13 pt ref 2995-01482-1
+ -25.440073   16.898483  -25.412468   16.908834   -0.00000  ! entry 14 star 14 pt ref 4064-01702-1

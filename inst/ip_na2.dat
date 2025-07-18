@@ -41,12 +41,12 @@ RotLim   -360.0     360.0      3.5        0.7           7.0
 !
 
 TertPistCoef  -2000.0  0.0  0.0
-TertXTiltCoef   130.0 0.0  0.0
-TertYTiltCoef   375.0  0.0  0.0
+TertXTiltCoef    65.0 0.0  0.0
+TertYTiltCoef   605.0  0.0  0.0
 TertXTransCoef   0.0  0.0  0.0
 TertYTransCoef -2000.0  0.0  0.0
 
-! Pist, Xtilt, Ytilt adjusted 2020-07-10 according to autocollimator
+! Xtilt, Ytilt adjusted 2023-08-18 according to autocollimator
 ! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
 ! Guide Camera Image
 ! Photometrics PXL 1024 camera; 1024x1024 with ? mm pixels
@@ -61,7 +61,7 @@ GIm_MaxCount  65535  ! 16 bits/pixel
 ! (for GCAM commands; used when user does not specify center)
 GIm_Ctr         512.0     512.0
 ! guide image scale (unbinned pix/deg on sky)
-GIm_Scale    -26104.8   26102.0  ! 2020-11-02 DD
+GIm_Scale    -26363.6   25983.0  ! 2025-07-16 AJT
 ! minimum and maximum position on guide image (unbinned pix)
 GIm_MinXY         0         0
 GIm_MaxXY      1024      1024
@@ -81,8 +81,8 @@ GProbe   1     T    ! probe number, exists?
   512.0      512.0  ! center of probe (guide image x,y unbinned pix)
     0          0    ! lower left corner of probe (guide image x,y unbinned pix)
  1024       1024    ! upper right corner of probe (guide image x,y unbinned pix)
--0.224264 -0.000313 ! position of rotator with respect to probe center (x,y deg on sky); 2020-11-02 DD; changed for tcc 1.2.0b4 RO 2015-06-03
-  -179.16            ! angle of rotator with respect to guide image (deg); 2020-11-02 DD
+-0.224340 0.000706 ! position of rotator with respect to probe center (x,y deg on sky); 2024-08-26 TS; changed for tcc 1.2.0b4 RO 2015-06-03
+  -179.56            ! angle of rotator with respect to guide image (deg); 2025-07-16 AJT
 ! number of probe used for pointing error measurements
 PtErrProbe   1
 

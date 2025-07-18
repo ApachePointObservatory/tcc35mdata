@@ -14,15 +14,17 @@
 
 !SecPistCoef   143.4  -380.0   -27.0    ! RM 2005-07-15
 
-SecPistCoef     50.0   -60.0    5.0  ! RM 2019-08-06
-SecXTiltCoef  -270.0    0.0    0.0  
-SecYTiltCoef   450.0    0.0    0.0 
-SecXTransCoef    0.0    0.0    0.0  
-SecYTransCoef  270.0  180.0  380.0  
-! Tilt and Translation adjusted 2020-07-10 according to autocollimator
-! Tilt constants adjusted 2020-12-04 RM
-! Translation constants adjusted 2020-11-03 RM after primary mirror was jarred
+SecPistCoef    300.0   -60.0    5.0  ! RM 2025-07-16
+SecXTiltCoef  -225.0    0.0    0.0  
+SecYTiltCoef   415.0    0.0    0.0 
+SecXTransCoef  500.0    0.0    0.0  
+SecYTransCoef  1000.0  180.0  380.0  
 
+!SecXTiltCoef  -252.0    0.0    0.0  old value on 2024-11-12
+!SecYTiltCoef   415.0    0.0    0.0
+!
+! Tilt and Translation constants adjusted 2025-07-12 according to autocollimator
+! Tilt constants adjusted 2025-07-15 according to Shack
 
 ! Sec coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
 ! SecPistCoef adjusted 2019-07-20 by RM after measurements with ARCTIC

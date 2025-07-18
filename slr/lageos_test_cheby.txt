@@ -1,0 +1,45 @@
+# Name of object
+# Optional: defaults to the empty string.
+name               "lageos_2 test"
+
+# Coordinate system code and date
+# Optional: defaults to appgeo 0
+# Choices (which are case-sensitive) include:
+# icrs: ICRS; date is date of observation (Julian years); 0 means now
+# appgeo: apparent geocentric; date is date of equinox (Julian years); 0 means now
+# apptopo: apparent topocentric; date is TAI (MJD, sec); 0 means now
+# obs: refracted apparent topocentric; date is TAI (MJD, sec); 0 means now
+userSys   obs 0
+
+
+# Chebyshev polynomial coefficients for track/chebyshev
+# The format is minTAI  maxTAI  coeff0  coeff1...
+# where:
+# - minTAI and maxTAI are the minimum and maximum allowed TAI date, in MJD, seconds
+#   (tracking will fail if you use these polynomials outside this date range)
+# - The polynomial is evaluated with x ranging from -1 to 1 over the specified date range
+# Chebyshev coefficients for object position, az (deg)
+#Fill in convienent time for test, this moves from 302 -> 5 in az, PCA ~54 deg elevation, 47 up to 52 down, 20 min
+chebyUser1 5155999964  5156001164 206.97520797, -31.95575415,  -1.10191865,   0.60211188
+# Chebyshev coefficients object position, el (deg)
+chebyUser2 5155999964  5156001164 51.95195491,  2.67736063, -2.18896517, -0.1128379
+# Chebyshev coefficients for object distance (au)
+chebyDist  5155999964  5156001164 4.45476925e-05, -7.72207052e-07,  5.77014606e-07,  5.33040546e-09
+
+# Type of rotation (e.g. with object or horizon)
+# Optional; defaults to none
+# see rotUser for choices
+rotType none
+
+# Rotator angle as position velocity time (TAI, MDJ).
+# Optional; defaults to nan nan nan
+# The exact meaning depends on rotType (which is case sensitive):
+# - object: the angle of the user coordinate system w.r.t. the instrument.
+# - horizon: the angle of az/alt w.r.t the instrument
+# - mount: the angle sent to the axis controller
+# - none: no rotation
+rotUser 0 0 1
+
+# Predicted magnitude of object
+# Optional: defaults to nan
+#mag        9

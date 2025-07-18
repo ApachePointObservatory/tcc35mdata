@@ -1,0 +1,30 @@
+! Caption record:
+APO 3.5M Pointing Data 2017-12-12T02:46:30.8
+! Option record: ALTAZ followed by rotator code, if applicable
+: ALTAZ
+: ROTL
+! Run parameters: telescope latitude deg min sec
+32 46 49.3
+! Pointing data (TPOINT format #4):
+!
+! All angles are in degrees
+! Azimuth uses the convention: N=0, E=90 (unlike the TCC, which uses S=0, E=90)
+!
+!  Desired Phys            Actual Mount          Rot Phys
+! Az          Alt         Az          Alt
+  44.562370   60.722410   44.542011   60.771339   -0.00000  ! entry 1 star 1 pt ref 3319-02074-1
+!  16.584773   13.729281   16.602379   13.749600   -0.00000  ! entry 2 star 2 pt ref 4150-01302-1
+  99.375279   41.498385   99.390638   41.543273   -0.00000  ! entry 3 star 3 pt ref 0681-01151-1
+!  17.048518   14.042242   17.080529   14.069709   -0.00000  ! entry 4 star 2 pt ref 4150-01302-1
+ 157.250376   73.120512  157.279346   73.164532   -0.00000  ! entry 5 star 4 pt ref 1206-01792-1
+-139.557051   38.682252  220.474144   38.710715   -0.00000  ! entry 6 star 5 pt ref 5821-01482-1
+-110.300314   48.918070  249.713351   48.946988   -0.00000  ! entry 7 star 6 pt ref 1155-02186-1
+ 159.465012   10.202289  159.472259   10.230406   -0.00000  ! entry 8 star 7 pt ref 7567-01183-1
+-136.892454   14.302633  223.127632   14.325471   -0.00000  ! entry 9 star 8 pt ref 6961-01626-1
+ -88.831372   75.077181  271.105573   75.111133   -0.00000  ! entry 10 star 9 pt ref 2261-01483-1
+ 170.192392   26.045733  170.221138   26.078476   -0.00000  ! entry 11 star 10 pt ref 7007-02243-1
+  52.594821   28.561738   52.603722   28.606788   -0.00000  ! entry 12 star 11 pt ref 3391-02640-1
+ -21.501725   84.500476  -21.892218   84.547305   -0.00000  ! entry 13 star 12 pt ref 2813-02103-1
+ -63.616293   64.409446  -63.680772   64.443929   -0.00000  ! entry 14 star 13 pt ref 3235-01512-1
+ -30.270546   14.642693  -30.262949   14.672063   -0.00000  ! entry 15 star 14 pt ref 3910-01710-1
+ -99.996163   36.263068  -99.985025   36.288752   -0.00000  ! entry 16 star 15 pt ref 1143-00506-1

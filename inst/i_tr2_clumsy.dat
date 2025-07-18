@@ -1,0 +1,101 @@
+!+
+! The Agile Instrument at TR2
+!-
+
+! Tertiary Mirror Control
+
+! mirror collimation coefficients
+! - piston and translation coefficients are in um
+! - tilt coefficients are in arc-seconds
+! - value = Coef1 + Coef2 sin(alt) + Coef3 cos(alt)
+TertPistCoef  -2102.5  0.0  0.0
+TertXTiltCoef  180.0  0.0  0.0
+TertYTiltCoef  645.0  0.0  0.0
+TertXTransCoef  10.3  0.0  0.0
+TertYTransCoef  -1879.1  0.0  0.0
+! Tert coeffs converted from the old TCC's mirror model by coeffConverter 2014-07-23.
+! Above values set 2022-08-13 AJT
+! Modifed 2009-06-12 WFK
+
+! Instrument Rotator
+
+! ID: controller number (0 if no controller, <0 invalid)
+RotID             0
+! physical angle used for pointing error measurements,
+! and the fixed physical angle if there is no rotator
+Rot_Fixed_Phys    -90.0
+! Rot_Offset        0.0
+! Rot_Scale        -1.0
+
+! rotator limits due to the rotator:
+! note: the actual rotator angle limits are the intersection
+! of the RotLim angle limits with InstPosLim
+!       min ang   max ang   max |vel|   max |accel|   max |jerk|
+!        (deg)     (deg)    (deg/sec)   (deg/sec^2)  (deg/sec^3)
+RotLim   -270.0     270.0      3.5        0.7           7.0
+
+! Instrument
+
+! image center (x,y unbinned pix) and scale (x,y unbinned pix/deg on sky)
+! center is desired loc. of zero boresight; it need not be geometric center
+IIm_Ctr       150,     150		! RM 2025-04-07
+IIm_Scale   -27440.2, 28259.1		! 2025-04-07 RM
+                                        !
+! min and max instrument image coordinates (unbinned pixels)
+IIm_MinXY       0,       0
+IIm_MaxXY    1024,    1024
+
+! focus (secondary piston) offset due to instrument (um)
+Inst_Foc    -2280                         ! 2021-07-30 RM
+
+! min, max rotator position due to the instrument (deg)
+! note: the net position limits are the intersection of this
+! with the position components of RotLim
+InstPosLim  -180.0, 180.0
+
+! position of the center of the rotator in instrument frame
+! WARNING: copy changes to GProbe below
+Rot_Inst_xy   0.01, -0.01          ! 2025-04-07 RM
+
+! angle from the instrument x axis to the rotator x axis
+! WARNING: copy changes to GProbe below
+Rot_Inst_ang   89.37         	         ! 2025-04-08 RM
+
+! Guide Camera Image
+! This tells TCC that Agile has a guide camera located exactly on the boresight,
+! which makes it possible to run track/pterr
+
+! Guide Probe(s)
+! probe number (in range [1,20]), does probe exist? (T=yes/F=no)
+! if and only if the probe exists then this data must follow in order:
+! center of guide probe on guide image (x,y unbinned pix)
+! mininum guide image coordinates (x,y unbinned pix)
+! maximum guide image coordinates (x,y unbinned pix)
+! position of guide camera probe w.r.t. rotator (x,y deg on sky)
+! angle from the guide image x axis to rotator x axis (deg)
+GProbe   1     T    ! probe number, exists?
+  512.0      512.0  ! center (x,y unbinned pix)
+    0          0    ! mininum (x,y unbinned pix)
+ 1024       1024    ! maximum (x,y unbinned pix)
+ -0.000834  0.001122 ! position of rotator with respect to probe center (x,y deg on sky); a copy of Rot_Inst_xy
+     -89.65         ! angle of rotator with respect to guide image (deg): a copy of Rot_Inst_ang
+! number of probe used for pointing error measurements
+PtErrProbe   1
+
+! ID: controller number (0 if no controller, <0 invalid)
+GCamID            1
+! view number
+GCViewNum         0
+! maximum counts per pixel
+GIm_MaxCount  65535  ! 16 bits/pixel
+! default center of guide image (unbinned pix)
+! (for GCAM commands; used when user does not specify center)
+GIm_Ctr         512.0     512.0
+! guide image scale (unbinned pix/deg on sky)
+GIm_Scale    -27570.4   27429.4 ! 2019-04-19 DD
+! minimum and maximum position on guide image (unbinned pix)
+GIm_MinXY         0         0
+GIm_MaxXY      1024      1024
+
+! binning factor (integer x, y)  testing 3x3 binning 8/10 cc
+Gim_BinFac        1         1

@@ -1,0 +1,30 @@
+! Caption record:
+APO 3.5M Pointing Data 2017-12-10T07:48:27.2
+! Option record: ALTAZ followed by rotator code, if applicable
+: ALTAZ
+: ROTL
+! Run parameters: telescope latitude deg min sec
+32 46 49.3
+! Pointing data (TPOINT format #4):
+!
+! All angles are in degrees
+! Azimuth uses the convention: N=0, E=90 (unlike the TCC, which uses S=0, E=90)
+!
+!  Desired Phys            Actual Mount          Rot Phys
+! Az          Alt         Az          Alt
+  41.565309   60.802323   41.559187   60.847712   -0.00000  ! entry 1 star 1 pt ref 3414-02496-1
+  15.860815   15.431733   15.881060   15.464827   -0.00000  ! entry 2 star 2 pt ref 4187-01365-1
+ 104.363015   47.935068  104.383127   47.976381   -0.00000  ! entry 3 star 3 pt ref 1394-02122-1
+ 151.960294   73.105231  151.973094   73.149288   -0.00000  ! entry 4 star 4 pt ref 1334-02419-1
+-140.066886   34.215707  219.965301   34.248606   -0.00000  ! entry 5 star 5 pt ref 5311-01285-1
+-110.496799   47.622572  249.527591   47.658292   -0.00000  ! entry 6 star 6 pt ref 0653-01366-1
+ 160.998859   13.391346  161.030742   13.422201   -0.00000  ! entry 7 star 7 pt ref 7650-03052-1
+-135.144319   12.573466  224.884170   12.601444   -0.00000  ! entry 8 star 8 pt ref 6443-00914-1
+ -80.295066   78.199081  279.666073   78.241730   -0.00000  ! entry 9 star 9 pt ref 2394-02026-1
+ 169.168878   28.598473  169.201322   28.638447   -0.00000  ! entry 10 star 10 pt ref 6531-03793-1
+  53.537832   24.913112   53.559717   24.953145   -0.00000  ! entry 11 star 11 pt ref 3019-02030-1
+! -11.912558   74.471254  -11.960769   74.520367   -0.00000  ! entry 12 star 12 pt ref 3378-01788-1
+ -63.463639   63.387474  -63.472140   63.427547   -0.00000  ! entry 13 star 13 pt ref 2882-02046-1
+ -13.814781   74.312261  -13.897848   74.359014   -0.00000  ! entry 14 star 12 pt ref 3378-01788-1
+ -26.456914   12.614945  -26.434574   12.647903   -0.00000  ! entry 15 star 14 pt ref 3981-01590-1
+-100.368805   34.345477 -100.345971   34.379146   -0.00000  ! entry 16 star 15 pt ref 0643-00937-1

@@ -14,7 +14,7 @@ MaxUsers            25
 CollimateInterval   30
 ! Interval between status updates: tracking, slewing, neither (sec)
 !  0 => no updates
-StatusInterval      10,  2, 10
+StatusInterval      10, 2, 10
 
 ! Tracking and Slewing Parameters
 

@@ -13,7 +13,14 @@ IIm_MaxXY    1024,      1024            ! RM 2016-03-28
 ! focus (secondary piston) offset due to instrument (um)
 Inst_Foc     250                        ! RM 2019-04-07
 ! position of the center of the rotator in instrument frame
-Rot_Inst_xy    -0.002755,  -0.001677   ! JMD 02/07/2018
+ Rot_Inst_xy    -0.010755,  -0.007177    ! CG 11/29/2021 - quick&dirty
+! Rot_inst_xy    -0.002755,  -0.001677 ! JMD 02/07/2018
+
+! Pointing off, initial position was:
+! Rot_inst_xy    -0.002755,  -0.001677 ! JMD 02/07/2018
+! making boresight correction of x = 0.008, y= 0.0055 (subtracting them)
+! quick & dirty new values:  x = -0.010755, y = -0.007177
+
 ! angle from the instrument x axis to the rotator x axis
 Rot_Inst_ang   -91.25                    ! measured 02/07/2018, corrected 8/15/2020
 
