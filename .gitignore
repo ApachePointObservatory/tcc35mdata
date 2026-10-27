@@ -1,3 +1,5 @@
 iersbulla.dat
 *.SAVE
+*.CS
 *.dat~
+*.dat.*
